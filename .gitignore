@@ -1,0 +1,8 @@
+bin/
+obj/
+results/
+*.user
+.vs/
+.idea/
+TestResults/
+docs/answer.md

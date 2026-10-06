@@ -1,0 +1,46 @@
+"AppState"
+{
+	"appid"		"3132990"
+	"Universe"		"1"
+	"name"		"Black Myth: Wukong Benchmark Tool"
+	"StateFlags"		"4"
+	"installdir"		"Black Myth Wukong Benchmark Tool"
+	"LastUpdated"		"1791310979"
+	"LastPlayed"		"1791311539"
+	"SizeOnDisk"		"8365222843"
+	"StagingSize"		"0"
+	"buildid"		"15365379"
+	"LastOwner"		"76561190000000000"
+	"DownloadType"		"1"
+	"UpdateResult"		"0"
+	"BytesToDownload"		"7404494784"
+	"BytesDownloaded"		"7404494784"
+	"BytesToStage"		"8577773167"
+	"BytesStaged"		"8577773167"
+	"TargetBuildID"		"15365379"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"3132991"
+		{
+			"manifest"		"2001970149514029866"
+			"size"		"8365222843"
+		}
+	}
+	"SharedDepots"
+	{
+		"228989"		"228980"
+		"228990"		"228980"
+		"229006"		"228980"
+	}
+	"UserConfig"
+	{
+		"language"		"english"
+	}
+	"MountedConfig"
+	{
+		"language"		"english"
+	}
+}

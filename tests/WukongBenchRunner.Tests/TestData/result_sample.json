@@ -1,0 +1,3637 @@
+{
+ "TimeStamp": 1791311375,
+ "BenckMarkVersion": 0,
+ "FPSAvg": 24,
+ "FPSMax": 27,
+ "FPSMin": 20,
+ "FPS95": 22,
+ "CPUAvg": 1,
+ "GPUAvg": 1,
+ "GPULeak": 1,
+ "VideoMem": 0.0,
+ "GameVer": "1.0.3.14649",
+ "SysVer": "10.0.19045.1.0.64bit",
+ "CPUModel": "AMD Ryzen 5 5625U with Radeon Graphics         ",
+ "GPUModel": "AMD Radeon Graphics (RADV RENOIR)",
+ "GpuDriverVer": "35.0.99999.9999",
+ "VideoMemSize": "5GB",
+ "SysMem": "16GB",
+ "ScreenMode": 1,
+ "ScreenResolution": "1920 × 1200",
+ "QualityLevel": 1,
+ "ImageQuality": 60,
+ "ViewDistance": 1,
+ "AntiAliasing": 1,
+ "PostProcessing": 1,
+ "ShadowQuality": 1,
+ "TextureQuality": 1,
+ "MaterialQuality": 1,
+ "VegetationQuality": 1,
+ "MotionBlur": 2,
+ "Rtx": 0,
+ "Dlss": 0,
+ "InsertFrame": 1,
+ "Dx12": 1,
+ "Records": [
+  {
+   "TimeStamp": 1791311233401,
+   "FrameRate": 24.8890857696533,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.5448999404907,
+   "GPUFrameTime": 64.5342025756836,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311233475,
+   "FrameRate": 25.2834014892578,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 20.2231998443604,
+   "GPUFrameTime": 66.0007019042969,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311233551,
+   "FrameRate": 25.563928604126,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7370004653931,
+   "GPUFrameTime": 65.8532028198242,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311233625,
+   "FrameRate": 25.8817672729492,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.5746002197266,
+   "GPUFrameTime": 65.078498840332,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311233703,
+   "FrameRate": 25.8337497711182,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.4160003662109,
+   "GPUFrameTime": 69.0914001464844,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311233782,
+   "FrameRate": 25.5956573486328,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.4345998764038,
+   "GPUFrameTime": 71.5766983032227,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311233855,
+   "FrameRate": 26.037296295166,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1864004135132,
+   "GPUFrameTime": 64.8569030761719,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311233930,
+   "FrameRate": 26.2302169799805,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.7908000946045,
+   "GPUFrameTime": 65.5625,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234002,
+   "FrameRate": 26.5448246002197,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0644998550415,
+   "GPUFrameTime": 64.7888031005859,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234075,
+   "FrameRate": 26.728199005127,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6763000488281,
+   "GPUFrameTime": 64.9103012084961,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234149,
+   "FrameRate": 26.8078498840332,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2875995635986,
+   "GPUFrameTime": 65.4261016845703,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234224,
+   "FrameRate": 26.8503398895264,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.813099861145,
+   "GPUFrameTime": 66.0434036254883,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234299,
+   "FrameRate": 26.7833290100098,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3812999725342,
+   "GPUFrameTime": 66.5916976928711,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234373,
+   "FrameRate": 26.8343315124512,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1078996658325,
+   "GPUFrameTime": 65.9292984008789,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234447,
+   "FrameRate": 26.8861427307129,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6187000274658,
+   "GPUFrameTime": 65.2093963623047,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234523,
+   "FrameRate": 26.6859169006348,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.7138004302979,
+   "GPUFrameTime": 68.8270034790039,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234607,
+   "FrameRate": 26.8044567108154,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.7284002304077,
+   "GPUFrameTime": 65.5416030883789,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234676,
+   "FrameRate": 26.8279056549072,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 22.1334991455078,
+   "GPUFrameTime": 66.0811996459961,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234748,
+   "FrameRate": 26.8218994140625,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.3052997589111,
+   "GPUFrameTime": 66.0835037231445,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234821,
+   "FrameRate": 26.7817115783691,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.572699546814,
+   "GPUFrameTime": 66.8632965087891,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234896,
+   "FrameRate": 26.789155960083,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8217000961304,
+   "GPUFrameTime": 66.4683990478516,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311234985,
+   "FrameRate": 26.7565765380859,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.2207002639771,
+   "GPUFrameTime": 67.1333999633789,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235052,
+   "FrameRate": 26.6414089202881,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.0567998886108,
+   "GPUFrameTime": 67.3958969116211,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235125,
+   "FrameRate": 26.4740657806396,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.6203002929688,
+   "GPUFrameTime": 68.0916976928711,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235199,
+   "FrameRate": 26.3917942047119,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.1272001266479,
+   "GPUFrameTime": 69.2468032836914,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235283,
+   "FrameRate": 25.7684307098389,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.298999786377,
+   "GPUFrameTime": 68.2985000610352,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235362,
+   "FrameRate": 25.6292667388916,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.8129997253418,
+   "GPUFrameTime": 69.7032012939453,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235438,
+   "FrameRate": 25.677282333374,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8863000869751,
+   "GPUFrameTime": 68.7006988525391,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235521,
+   "FrameRate": 25.4691276550293,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1771001815796,
+   "GPUFrameTime": 69.0584030151367,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235601,
+   "FrameRate": 25.53586769104,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.1148996353149,
+   "GPUFrameTime": 69.5077972412109,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235676,
+   "FrameRate": 25.5724201202393,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.8858003616333,
+   "GPUFrameTime": 69.5151977539063,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235753,
+   "FrameRate": 25.5678558349609,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.2518997192383,
+   "GPUFrameTime": 70.3313980102539,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235832,
+   "FrameRate": 25.6069774627686,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1589002609253,
+   "GPUFrameTime": 69.5539016723633,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235911,
+   "FrameRate": 25.6052894592285,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1784000396729,
+   "GPUFrameTime": 69.8046035766602,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311235990,
+   "FrameRate": 25.4800701141357,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7999000549316,
+   "GPUFrameTime": 71.4754028320313,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236069,
+   "FrameRate": 25.4489078521729,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6545000076294,
+   "GPUFrameTime": 70.9832000732422,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236147,
+   "FrameRate": 25.4350357055664,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5841999053955,
+   "GPUFrameTime": 70.7595977783203,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236227,
+   "FrameRate": 25.4230709075928,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5417995452881,
+   "GPUFrameTime": 70.3067016601563,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236304,
+   "FrameRate": 25.46337890625,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1063003540039,
+   "GPUFrameTime": 70.2470016479492,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236387,
+   "FrameRate": 25.1410942077637,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4967002868652,
+   "GPUFrameTime": 71.3815994262695,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236465,
+   "FrameRate": 25.2788333892822,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5043001174927,
+   "GPUFrameTime": 69.9673004150391,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236544,
+   "FrameRate": 25.2954978942871,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0996999740601,
+   "GPUFrameTime": 70.6130981445313,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236624,
+   "FrameRate": 25.2988471984863,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.9958000183105,
+   "GPUFrameTime": 71.1044006347656,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236704,
+   "FrameRate": 25.1404209136963,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.688099861145,
+   "GPUFrameTime": 71.3711013793945,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236788,
+   "FrameRate": 25.1490077972412,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5250997543335,
+   "GPUFrameTime": 71.3160018920898,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236863,
+   "FrameRate": 25.1320056915283,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 17.0412998199463,
+   "GPUFrameTime": 70.7785034179688,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311236943,
+   "FrameRate": 25.1553649902344,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1668996810913,
+   "GPUFrameTime": 71.2528991699219,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237022,
+   "FrameRate": 25.1526679992676,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9732999801636,
+   "GPUFrameTime": 71.1664962768555,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237102,
+   "FrameRate": 25.1165885925293,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.629599571228,
+   "GPUFrameTime": 71.5090026855469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237180,
+   "FrameRate": 25.2051029205322,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5621004104614,
+   "GPUFrameTime": 70.2471008300781,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237262,
+   "FrameRate": 25.3073043823242,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5024995803833,
+   "GPUFrameTime": 69.0278015136719,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237338,
+   "FrameRate": 25.308536529541,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0354995727539,
+   "GPUFrameTime": 70.6461029052734,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237416,
+   "FrameRate": 25.3646755218506,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.911600112915,
+   "GPUFrameTime": 70.5574035644531,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237493,
+   "FrameRate": 25.420280456543,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8129997253418,
+   "GPUFrameTime": 69.3858032226563,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237572,
+   "FrameRate": 25.3973560333252,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0102996826172,
+   "GPUFrameTime": 70.415901184082,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237653,
+   "FrameRate": 25.3786697387695,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1226997375488,
+   "GPUFrameTime": 70.1796035766602,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237735,
+   "FrameRate": 25.0151863098145,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.4475002288818,
+   "GPUFrameTime": 70.6765975952148,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237809,
+   "FrameRate": 25.5480785369873,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.201000213623,
+   "GPUFrameTime": 70.3436965942383,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237887,
+   "FrameRate": 25.5597915649414,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0773000717163,
+   "GPUFrameTime": 70.0568008422852,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311237964,
+   "FrameRate": 25.5846138000488,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9671001434326,
+   "GPUFrameTime": 70.4282989501953,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238041,
+   "FrameRate": 25.5881881713867,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4629001617432,
+   "GPUFrameTime": 70.3880004882813,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238119,
+   "FrameRate": 25.6477432250977,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1416997909546,
+   "GPUFrameTime": 69.5960006713867,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238197,
+   "FrameRate": 25.5798377990723,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9663000106812,
+   "GPUFrameTime": 70.3557968139648,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238274,
+   "FrameRate": 25.6319446563721,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1826000213623,
+   "GPUFrameTime": 69.8795013427734,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238352,
+   "FrameRate": 25.7090225219727,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.6398000717163,
+   "GPUFrameTime": 69.1262969970703,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238430,
+   "FrameRate": 25.7136993408203,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7600002288818,
+   "GPUFrameTime": 69.7667007446289,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238508,
+   "FrameRate": 25.7831840515137,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8030996322632,
+   "GPUFrameTime": 69.4809036254883,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238584,
+   "FrameRate": 25.7668209075928,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9001998901367,
+   "GPUFrameTime": 68.6449966430664,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238663,
+   "FrameRate": 25.777307510376,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4090003967285,
+   "GPUFrameTime": 69.2091979980469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238740,
+   "FrameRate": 25.7122707366943,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.184100151062,
+   "GPUFrameTime": 70.3998031616211,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238819,
+   "FrameRate": 25.7131671905518,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1173000335693,
+   "GPUFrameTime": 69.5501022338867,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238896,
+   "FrameRate": 25.7290744781494,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3030996322632,
+   "GPUFrameTime": 69.7341995239258,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311238973,
+   "FrameRate": 25.8043937683105,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9437999725342,
+   "GPUFrameTime": 69.5831985473633,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239050,
+   "FrameRate": 25.7743129730225,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8957004547119,
+   "GPUFrameTime": 69.9654006958008,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239128,
+   "FrameRate": 25.8152294158936,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.0677003860474,
+   "GPUFrameTime": 69.1630020141602,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239205,
+   "FrameRate": 25.8348159790039,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5361003875732,
+   "GPUFrameTime": 69.1313018798828,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239283,
+   "FrameRate": 25.7989692687988,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3751001358032,
+   "GPUFrameTime": 69.9069976806641,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239362,
+   "FrameRate": 25.7379035949707,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4537000656128,
+   "GPUFrameTime": 70.3345031738281,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239439,
+   "FrameRate": 25.7292213439941,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.7693004608154,
+   "GPUFrameTime": 69.6882019042969,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239516,
+   "FrameRate": 25.7468128204346,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2389001846313,
+   "GPUFrameTime": 69.1025009155273,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239593,
+   "FrameRate": 25.8166885375977,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.0719003677368,
+   "GPUFrameTime": 69.3497009277344,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239669,
+   "FrameRate": 25.9161930084229,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9274997711182,
+   "GPUFrameTime": 68.6567993164063,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239746,
+   "FrameRate": 25.9509735107422,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.0009002685547,
+   "GPUFrameTime": 68.3556976318359,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239826,
+   "FrameRate": 25.8014507293701,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4934997558594,
+   "GPUFrameTime": 70.1340026855469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239903,
+   "FrameRate": 25.8027744293213,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8041000366211,
+   "GPUFrameTime": 69.5509033203125,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311239980,
+   "FrameRate": 25.8598937988281,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5454998016357,
+   "GPUFrameTime": 69.2617034912109,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240055,
+   "FrameRate": 25.9112854003906,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8438997268677,
+   "GPUFrameTime": 69.2382965087891,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240133,
+   "FrameRate": 25.930103302002,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.9194002151489,
+   "GPUFrameTime": 68.3901977539063,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240209,
+   "FrameRate": 26.0385971069336,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1085996627808,
+   "GPUFrameTime": 67.9765014648438,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240287,
+   "FrameRate": 25.9930286407471,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5328998565674,
+   "GPUFrameTime": 69.0636978149414,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240363,
+   "FrameRate": 25.9706935882568,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5371999740601,
+   "GPUFrameTime": 69.2445983886719,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240441,
+   "FrameRate": 25.8863544464111,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1298999786377,
+   "GPUFrameTime": 69.8310012817383,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240519,
+   "FrameRate": 25.8799629211426,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2194995880127,
+   "GPUFrameTime": 69.2774963378906,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240596,
+   "FrameRate": 25.8580341339111,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9120998382568,
+   "GPUFrameTime": 69.402702331543,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240673,
+   "FrameRate": 25.8797187805176,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.336799621582,
+   "GPUFrameTime": 69.0289993286133,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240751,
+   "FrameRate": 25.8410797119141,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5312995910645,
+   "GPUFrameTime": 70.1603012084961,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240829,
+   "FrameRate": 25.798360824585,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5418996810913,
+   "GPUFrameTime": 69.6766967773438,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240906,
+   "FrameRate": 25.852575302124,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.503399848938,
+   "GPUFrameTime": 68.8488998413086,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311240983,
+   "FrameRate": 25.9324932098389,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4511003494263,
+   "GPUFrameTime": 68.6526031494141,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241057,
+   "FrameRate": 26.0059623718262,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4443998336792,
+   "GPUFrameTime": 68.2967987060547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241140,
+   "FrameRate": 25.6357078552246,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.4509000778198,
+   "GPUFrameTime": 67.866096496582,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241218,
+   "FrameRate": 25.7069530487061,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.9020004272461,
+   "GPUFrameTime": 68.8762969970703,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241295,
+   "FrameRate": 25.7004318237305,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5993003845215,
+   "GPUFrameTime": 69.7080001831055,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241371,
+   "FrameRate": 25.89626121521,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3437004089355,
+   "GPUFrameTime": 67.7837982177734,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241447,
+   "FrameRate": 25.9795188903809,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1646003723145,
+   "GPUFrameTime": 68.1017990112305,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241523,
+   "FrameRate": 25.9966926574707,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8606996536255,
+   "GPUFrameTime": 69.1009979248047,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241600,
+   "FrameRate": 26.0691108703613,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2281999588013,
+   "GPUFrameTime": 68.7925033569336,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241676,
+   "FrameRate": 26.0841522216797,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.291600227356,
+   "GPUFrameTime": 68.054801940918,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241753,
+   "FrameRate": 26.0554313659668,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7530002593994,
+   "GPUFrameTime": 68.9552993774414,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241830,
+   "FrameRate": 26.1014156341553,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1008996963501,
+   "GPUFrameTime": 68.5707015991211,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241906,
+   "FrameRate": 26.1243438720703,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9468002319336,
+   "GPUFrameTime": 68.6894989013672,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311241982,
+   "FrameRate": 26.1663646697998,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7929000854492,
+   "GPUFrameTime": 67.5661010742188,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242058,
+   "FrameRate": 26.1691379547119,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2578001022339,
+   "GPUFrameTime": 68.7888031005859,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242136,
+   "FrameRate": 26.1255111694336,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7135000228882,
+   "GPUFrameTime": 69.1157989501953,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242212,
+   "FrameRate": 26.112663269043,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1845998764038,
+   "GPUFrameTime": 69.151496887207,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242288,
+   "FrameRate": 26.1434669494629,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7158002853394,
+   "GPUFrameTime": 68.2655029296875,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242365,
+   "FrameRate": 26.1515998840332,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5899000167847,
+   "GPUFrameTime": 68.4281005859375,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242441,
+   "FrameRate": 26.1200389862061,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3275003433228,
+   "GPUFrameTime": 69.0272979736328,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242517,
+   "FrameRate": 26.1489028930664,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1471996307373,
+   "GPUFrameTime": 68.2947006225586,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242596,
+   "FrameRate": 26.0587635040283,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2097997665405,
+   "GPUFrameTime": 69.4609985351563,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242672,
+   "FrameRate": 26.1384410858154,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2210998535156,
+   "GPUFrameTime": 68.2626037597656,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242748,
+   "FrameRate": 26.1822452545166,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6263999938965,
+   "GPUFrameTime": 68.1651000976563,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242823,
+   "FrameRate": 26.2285690307617,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8080997467041,
+   "GPUFrameTime": 68.3084030151367,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242899,
+   "FrameRate": 26.2722244262695,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.9535999298096,
+   "GPUFrameTime": 67.8292999267578,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311242974,
+   "FrameRate": 26.3005237579346,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1014995574951,
+   "GPUFrameTime": 67.6714019775391,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243055,
+   "FrameRate": 26.0430965423584,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7798004150391,
+   "GPUFrameTime": 69.4587020874023,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243130,
+   "FrameRate": 26.1141033172607,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0180997848511,
+   "GPUFrameTime": 68.0145034790039,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243206,
+   "FrameRate": 26.1261253356934,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8900995254517,
+   "GPUFrameTime": 68.4100036621094,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243283,
+   "FrameRate": 26.1467838287354,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.868800163269,
+   "GPUFrameTime": 68.304801940918,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243367,
+   "FrameRate": 25.6329650878906,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3976001739502,
+   "GPUFrameTime": 73.8463973999023,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243442,
+   "FrameRate": 25.7163219451904,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.1010999679565,
+   "GPUFrameTime": 67.7773971557617,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243518,
+   "FrameRate": 25.7584342956543,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.7407999038696,
+   "GPUFrameTime": 66.4486999511719,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243605,
+   "FrameRate": 25.0606384277344,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.472900390625,
+   "GPUFrameTime": 69.5823974609375,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243682,
+   "FrameRate": 25.3147659301758,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3028001785278,
+   "GPUFrameTime": 68.4617004394531,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243760,
+   "FrameRate": 25.4574375152588,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3684997558594,
+   "GPUFrameTime": 67.7740020751953,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243835,
+   "FrameRate": 25.6921806335449,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.7746000289917,
+   "GPUFrameTime": 67.8481979370117,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243912,
+   "FrameRate": 25.828914642334,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.0374002456665,
+   "GPUFrameTime": 68.2845993041992,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311243988,
+   "FrameRate": 25.9539699554443,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.664400100708,
+   "GPUFrameTime": 67.986701965332,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244070,
+   "FrameRate": 25.68776512146,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5036001205444,
+   "GPUFrameTime": 71.6458969116211,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244147,
+   "FrameRate": 25.6837787628174,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.9437999725342,
+   "GPUFrameTime": 68.4412002563477,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244223,
+   "FrameRate": 25.7826404571533,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1152000427246,
+   "GPUFrameTime": 68.6967010498047,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244298,
+   "FrameRate": 26.0211753845215,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7299995422363,
+   "GPUFrameTime": 67.5627975463867,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244373,
+   "FrameRate": 26.1475200653076,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2902002334595,
+   "GPUFrameTime": 67.9853973388672,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244448,
+   "FrameRate": 26.2476692199707,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9615001678467,
+   "GPUFrameTime": 67.6232986450195,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244523,
+   "FrameRate": 26.3276767730713,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5279998779297,
+   "GPUFrameTime": 67.4217987060547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244601,
+   "FrameRate": 26.2335815429688,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3049001693726,
+   "GPUFrameTime": 68.4858016967773,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244676,
+   "FrameRate": 26.271614074707,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2292995452881,
+   "GPUFrameTime": 67.8404998779297,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244752,
+   "FrameRate": 26.2974605560303,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3273000717163,
+   "GPUFrameTime": 67.9589004516602,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244829,
+   "FrameRate": 26.2384452819824,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8840999603271,
+   "GPUFrameTime": 68.6264038085938,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244906,
+   "FrameRate": 26.2447986602783,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.271900177002,
+   "GPUFrameTime": 68.3952026367188,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311244982,
+   "FrameRate": 26.166841506958,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.2874002456665,
+   "GPUFrameTime": 69.0334014892578,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245058,
+   "FrameRate": 26.2449855804443,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7964000701904,
+   "GPUFrameTime": 68.0637969970703,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245134,
+   "FrameRate": 26.2067470550537,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1828002929688,
+   "GPUFrameTime": 68.8408966064453,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245209,
+   "FrameRate": 26.2210750579834,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.981499671936,
+   "GPUFrameTime": 68.7310028076172,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245286,
+   "FrameRate": 26.1418304443359,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4123001098633,
+   "GPUFrameTime": 68.4048004150391,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245362,
+   "FrameRate": 26.1619510650635,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3633003234863,
+   "GPUFrameTime": 68.2835006713867,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245438,
+   "FrameRate": 26.1510200500488,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0750999450684,
+   "GPUFrameTime": 68.390998840332,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245516,
+   "FrameRate": 26.1037101745605,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.414400100708,
+   "GPUFrameTime": 68.5558013916016,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245591,
+   "FrameRate": 26.1436138153076,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7978000640869,
+   "GPUFrameTime": 68.697998046875,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245670,
+   "FrameRate": 26.0200119018555,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4582004547119,
+   "GPUFrameTime": 70.0680999755859,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245747,
+   "FrameRate": 26.0269374847412,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3846998214722,
+   "GPUFrameTime": 68.6159973144531,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245823,
+   "FrameRate": 26.0642623901367,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5170001983643,
+   "GPUFrameTime": 68.6639022827148,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245901,
+   "FrameRate": 26.0307807922363,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2195997238159,
+   "GPUFrameTime": 69.4059982299805,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311245977,
+   "FrameRate": 26.0532989501953,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6389999389648,
+   "GPUFrameTime": 68.5827026367188,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246053,
+   "FrameRate": 26.1088237762451,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1294002532959,
+   "GPUFrameTime": 68.5687026977539,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246131,
+   "FrameRate": 25.999792098999,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8849000930786,
+   "GPUFrameTime": 69.4962997436523,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246208,
+   "FrameRate": 26.0158214569092,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2700004577637,
+   "GPUFrameTime": 68.5556030273438,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246286,
+   "FrameRate": 25.9742107391357,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.08899974823,
+   "GPUFrameTime": 68.8871002197266,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246361,
+   "FrameRate": 26.0286903381348,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9173002243042,
+   "GPUFrameTime": 68.8707962036133,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246440,
+   "FrameRate": 25.9556407928467,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5766000747681,
+   "GPUFrameTime": 69.5879974365234,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246516,
+   "FrameRate": 26.0270729064941,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3240995407104,
+   "GPUFrameTime": 68.5810012817383,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246590,
+   "FrameRate": 26.134464263916,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2425003051758,
+   "GPUFrameTime": 68.0912017822266,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246667,
+   "FrameRate": 26.1582469940186,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.006199836731,
+   "GPUFrameTime": 68.3461990356445,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246744,
+   "FrameRate": 26.1865062713623,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8118000030518,
+   "GPUFrameTime": 67.9638977050781,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246819,
+   "FrameRate": 26.2239856719971,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9891996383667,
+   "GPUFrameTime": 68.1092987060547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246894,
+   "FrameRate": 26.2898044586182,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.0338001251221,
+   "GPUFrameTime": 67.3872985839844,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311246971,
+   "FrameRate": 26.2411956787109,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.0909996032715,
+   "GPUFrameTime": 68.7381973266602,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247047,
+   "FrameRate": 26.3345851898193,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2486000061035,
+   "GPUFrameTime": 67.6573028564453,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247124,
+   "FrameRate": 26.1516647338867,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8936996459961,
+   "GPUFrameTime": 69.356201171875,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247200,
+   "FrameRate": 26.2890930175781,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2019996643066,
+   "GPUFrameTime": 67.5474014282227,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247275,
+   "FrameRate": 26.3411407470703,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.2587995529175,
+   "GPUFrameTime": 67.3122024536133,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247351,
+   "FrameRate": 26.3384494781494,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.6173000335693,
+   "GPUFrameTime": 67.6817016601563,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247426,
+   "FrameRate": 26.4040126800537,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5110998153687,
+   "GPUFrameTime": 67.3253021240234,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247501,
+   "FrameRate": 26.4480571746826,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7145004272461,
+   "GPUFrameTime": 66.627197265625,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247574,
+   "FrameRate": 26.6620826721191,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7599000930786,
+   "GPUFrameTime": 66.3516998291016,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247650,
+   "FrameRate": 26.7237873077393,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3723001480103,
+   "GPUFrameTime": 66.8556976318359,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247722,
+   "FrameRate": 26.810131072998,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4366998672485,
+   "GPUFrameTime": 65.8414993286133,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247796,
+   "FrameRate": 26.8590774536133,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2187995910645,
+   "GPUFrameTime": 66.6429977416992,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247871,
+   "FrameRate": 26.8768749237061,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.6021995544434,
+   "GPUFrameTime": 66.5604019165039,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311247947,
+   "FrameRate": 26.7702198028564,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9470996856689,
+   "GPUFrameTime": 67.0491027832031,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248020,
+   "FrameRate": 26.8929023742676,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1639995574951,
+   "GPUFrameTime": 65.5282974243164,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248095,
+   "FrameRate": 26.9177837371826,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3857002258301,
+   "GPUFrameTime": 65.9123001098633,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248169,
+   "FrameRate": 26.8834686279297,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3081998825073,
+   "GPUFrameTime": 66.940803527832,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248244,
+   "FrameRate": 26.7455234527588,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0195999145508,
+   "GPUFrameTime": 67.5606994628906,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248321,
+   "FrameRate": 26.6835670471191,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1057996749878,
+   "GPUFrameTime": 67.3142013549805,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248394,
+   "FrameRate": 26.7668018341064,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0201997756958,
+   "GPUFrameTime": 66.3150024414063,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248470,
+   "FrameRate": 26.8184261322021,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.9421997070313,
+   "GPUFrameTime": 66.228401184082,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248544,
+   "FrameRate": 26.8213214874268,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1598997116089,
+   "GPUFrameTime": 66.80419921875,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248618,
+   "FrameRate": 26.9307823181152,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5144996643066,
+   "GPUFrameTime": 65.692497253418,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248699,
+   "FrameRate": 26.3100891113281,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1359996795654,
+   "GPUFrameTime": 73.5451965332031,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248773,
+   "FrameRate": 26.3687515258789,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7146997451782,
+   "GPUFrameTime": 67.4142990112305,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248848,
+   "FrameRate": 26.5739612579346,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.9790000915527,
+   "GPUFrameTime": 65.8786010742188,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248921,
+   "FrameRate": 26.6768379211426,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1752996444702,
+   "GPUFrameTime": 66.1707992553711,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311248997,
+   "FrameRate": 26.7616710662842,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3435001373291,
+   "GPUFrameTime": 66.2928009033203,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249070,
+   "FrameRate": 26.8501396179199,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.710000038147,
+   "GPUFrameTime": 66.463996887207,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249144,
+   "FrameRate": 26.8345756530762,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9027996063232,
+   "GPUFrameTime": 66.4299011230469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249217,
+   "FrameRate": 26.9345550537109,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.040599822998,
+   "GPUFrameTime": 64.9723968505859,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249290,
+   "FrameRate": 27.0797443389893,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4196996688843,
+   "GPUFrameTime": 65.0193023681641,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249363,
+   "FrameRate": 27.1326389312744,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2683000564575,
+   "GPUFrameTime": 65.6938018798828,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249438,
+   "FrameRate": 27.0917835235596,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8044996261597,
+   "GPUFrameTime": 66.0770034790039,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249511,
+   "FrameRate": 27.1341915130615,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.104100227356,
+   "GPUFrameTime": 66.0,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249584,
+   "FrameRate": 27.196174621582,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5296001434326,
+   "GPUFrameTime": 65.4091033935547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249657,
+   "FrameRate": 27.2910995483398,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3659000396729,
+   "GPUFrameTime": 65.0578994750977,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249730,
+   "FrameRate": 27.3168697357178,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9701995849609,
+   "GPUFrameTime": 65.6671981811523,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249803,
+   "FrameRate": 27.2541561126709,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7250003814697,
+   "GPUFrameTime": 65.7257995605469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249877,
+   "FrameRate": 27.2686958312988,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.6473999023438,
+   "GPUFrameTime": 65.5279998779297,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311249952,
+   "FrameRate": 27.0844783782959,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7996997833252,
+   "GPUFrameTime": 67.4412994384766,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250026,
+   "FrameRate": 27.0651741027832,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5352001190186,
+   "GPUFrameTime": 66.3459014892578,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250101,
+   "FrameRate": 27.0172214508057,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3900995254517,
+   "GPUFrameTime": 67.0579986572266,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250175,
+   "FrameRate": 26.899694442749,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0452003479004,
+   "GPUFrameTime": 67.0276031494141,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250250,
+   "FrameRate": 26.8942108154297,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3182001113892,
+   "GPUFrameTime": 67.0914993286133,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250325,
+   "FrameRate": 26.7963314056396,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2062997817993,
+   "GPUFrameTime": 67.5308990478516,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250400,
+   "FrameRate": 26.8748321533203,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.660400390625,
+   "GPUFrameTime": 66.3571014404297,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250473,
+   "FrameRate": 26.8779525756836,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4214000701904,
+   "GPUFrameTime": 66.7027969360352,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250550,
+   "FrameRate": 26.7726535797119,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3640003204346,
+   "GPUFrameTime": 66.8218994140625,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250624,
+   "FrameRate": 26.8547134399414,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.378999710083,
+   "GPUFrameTime": 66.2199020385742,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250698,
+   "FrameRate": 26.8450183868408,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8829002380371,
+   "GPUFrameTime": 66.2416000366211,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250772,
+   "FrameRate": 26.9191093444824,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5944995880127,
+   "GPUFrameTime": 66.2969970703125,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250844,
+   "FrameRate": 27.0429172515869,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3915004730225,
+   "GPUFrameTime": 65.6677017211914,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250920,
+   "FrameRate": 26.891788482666,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.7943000793457,
+   "GPUFrameTime": 67.4609985351563,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311250993,
+   "FrameRate": 27.0021190643311,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4095001220703,
+   "GPUFrameTime": 65.5037994384766,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251067,
+   "FrameRate": 27.0258712768555,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3010997772217,
+   "GPUFrameTime": 65.7664031982422,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251142,
+   "FrameRate": 26.9635810852051,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0986995697021,
+   "GPUFrameTime": 67.1622009277344,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251218,
+   "FrameRate": 26.8675575256348,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.233099937439,
+   "GPUFrameTime": 67.5121002197266,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251291,
+   "FrameRate": 26.9296569824219,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9180002212524,
+   "GPUFrameTime": 66.2347030639648,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251366,
+   "FrameRate": 26.8738899230957,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5188999176025,
+   "GPUFrameTime": 67.1005020141602,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251440,
+   "FrameRate": 26.8776988983154,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.6815004348755,
+   "GPUFrameTime": 66.9983978271484,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251513,
+   "FrameRate": 26.9386405944824,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0080003738403,
+   "GPUFrameTime": 66.2033004760742,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251587,
+   "FrameRate": 26.9802112579346,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2350997924805,
+   "GPUFrameTime": 66.3776016235352,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251663,
+   "FrameRate": 26.9320373535156,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.1077995300293,
+   "GPUFrameTime": 67.3724975585938,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251737,
+   "FrameRate": 26.9033260345459,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9961996078491,
+   "GPUFrameTime": 67.0322036743164,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251811,
+   "FrameRate": 26.9012680053711,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.6679000854492,
+   "GPUFrameTime": 66.9675979614258,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251886,
+   "FrameRate": 26.8074779510498,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5544996261597,
+   "GPUFrameTime": 67.7292022705078,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311251962,
+   "FrameRate": 26.7347812652588,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.6143999099731,
+   "GPUFrameTime": 67.809196472168,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252037,
+   "FrameRate": 26.7093963623047,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4153995513916,
+   "GPUFrameTime": 67.8678970336914,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252114,
+   "FrameRate": 26.5513763427734,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5994997024536,
+   "GPUFrameTime": 69.0352020263672,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252189,
+   "FrameRate": 26.5509414672852,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7479000091553,
+   "GPUFrameTime": 68.0222015380859,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252263,
+   "FrameRate": 26.6240692138672,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3770999908447,
+   "GPUFrameTime": 67.1061019897461,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252339,
+   "FrameRate": 26.6112022399902,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 10.9439001083374,
+   "GPUFrameTime": 67.7220001220703,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252413,
+   "FrameRate": 26.642505645752,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.2580995559692,
+   "GPUFrameTime": 67.347297668457,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252487,
+   "FrameRate": 26.7623653411865,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.5380001068115,
+   "GPUFrameTime": 66.8669967651367,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252562,
+   "FrameRate": 26.7487659454346,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9105997085571,
+   "GPUFrameTime": 67.535400390625,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252637,
+   "FrameRate": 26.7015209197998,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.3217000961304,
+   "GPUFrameTime": 67.4601974487305,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252712,
+   "FrameRate": 26.7979412078857,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.4441995620728,
+   "GPUFrameTime": 66.6481018066406,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252785,
+   "FrameRate": 26.8365955352783,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1009998321533,
+   "GPUFrameTime": 66.6269989013672,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252862,
+   "FrameRate": 26.7447624206543,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.8038997650146,
+   "GPUFrameTime": 67.7089004516602,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311252935,
+   "FrameRate": 26.7389984130859,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5347995758057,
+   "GPUFrameTime": 67.2149963378906,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253013,
+   "FrameRate": 26.6085033416748,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3639001846313,
+   "GPUFrameTime": 67.6007995605469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253090,
+   "FrameRate": 26.6798076629639,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3100996017456,
+   "GPUFrameTime": 67.2957000732422,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253171,
+   "FrameRate": 26.6248588562012,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.2958002090454,
+   "GPUFrameTime": 67.9040985107422,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253254,
+   "FrameRate": 26.6527442932129,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 19.7509002685547,
+   "GPUFrameTime": 67.3156967163086,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253315,
+   "FrameRate": 26.6638298034668,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 27.6352005004883,
+   "GPUFrameTime": 67.5009002685547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253392,
+   "FrameRate": 26.5420207977295,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.4146003723145,
+   "GPUFrameTime": 68.3226013183594,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253470,
+   "FrameRate": 26.5725250244141,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.038800239563,
+   "GPUFrameTime": 67.8438034057617,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253545,
+   "FrameRate": 26.5349712371826,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 17.7392997741699,
+   "GPUFrameTime": 67.5050964355469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253614,
+   "FrameRate": 26.5754432678223,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 17.6501998901367,
+   "GPUFrameTime": 67.5050964355469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253711,
+   "FrameRate": 24.8993339538574,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5481996536255,
+   "GPUFrameTime": 66.2519989013672,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253783,
+   "FrameRate": 25.4997787475586,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7389001846313,
+   "GPUFrameTime": 65.390998840332,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253859,
+   "FrameRate": 25.7671794891357,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9502000808716,
+   "GPUFrameTime": 67.94580078125,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311253936,
+   "FrameRate": 26.0273513793945,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5750999450684,
+   "GPUFrameTime": 67.0030975341797,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254011,
+   "FrameRate": 26.2875442504883,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.5100002288818,
+   "GPUFrameTime": 66.5030975341797,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254085,
+   "FrameRate": 26.4870452880859,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.9400997161865,
+   "GPUFrameTime": 66.1585998535156,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254157,
+   "FrameRate": 26.6347179412842,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 17.4589004516602,
+   "GPUFrameTime": 66.6511001586914,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254231,
+   "FrameRate": 26.5499820709229,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.3743000030518,
+   "GPUFrameTime": 67.2874984741211,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254309,
+   "FrameRate": 26.5013542175293,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5656003952026,
+   "GPUFrameTime": 67.6155014038086,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254388,
+   "FrameRate": 26.1328125,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.1606006622314,
+   "GPUFrameTime": 70.6395034790039,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254460,
+   "FrameRate": 26.337890625,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.5382995605469,
+   "GPUFrameTime": 66.7453994750977,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254535,
+   "FrameRate": 26.3774223327637,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6974000930786,
+   "GPUFrameTime": 67.6451034545898,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254612,
+   "FrameRate": 26.3143043518066,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3767004013062,
+   "GPUFrameTime": 67.7386016845703,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254688,
+   "FrameRate": 26.3574714660645,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9381999969482,
+   "GPUFrameTime": 67.1859970092773,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254762,
+   "FrameRate": 26.4767627716064,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8343000411987,
+   "GPUFrameTime": 67.3366012573242,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254837,
+   "FrameRate": 26.6088981628418,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6473999023438,
+   "GPUFrameTime": 65.9686965942383,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254910,
+   "FrameRate": 26.6634178161621,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5151996612549,
+   "GPUFrameTime": 66.6538009643555,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311254986,
+   "FrameRate": 26.6745529174805,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.7149000167847,
+   "GPUFrameTime": 66.2990036010742,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255063,
+   "FrameRate": 26.5216217041016,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9546003341675,
+   "GPUFrameTime": 68.6425018310547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255140,
+   "FrameRate": 26.495153427124,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9631996154785,
+   "GPUFrameTime": 67.6624984741211,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255213,
+   "FrameRate": 26.4868545532227,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.4118003845215,
+   "GPUFrameTime": 67.0206985473633,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255297,
+   "FrameRate": 25.9846248626709,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 18.4015007019043,
+   "GPUFrameTime": 69.4963989257813,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255371,
+   "FrameRate": 25.9839248657227,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 17.0932006835938,
+   "GPUFrameTime": 66.6889038085938,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255455,
+   "FrameRate": 25.3946647644043,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.5488996505737,
+   "GPUFrameTime": 71.8831024169922,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255538,
+   "FrameRate": 25.3032360076904,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.3243999481201,
+   "GPUFrameTime": 68.8023986816406,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255618,
+   "FrameRate": 25.2042636871338,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.0237998962402,
+   "GPUFrameTime": 72.2605972290039,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255693,
+   "FrameRate": 25.3617343902588,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7481002807617,
+   "GPUFrameTime": 69.6352996826172,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255772,
+   "FrameRate": 25.5049991607666,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.1121997833252,
+   "GPUFrameTime": 69.5634002685547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255847,
+   "FrameRate": 25.6866455078125,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.4025001525879,
+   "GPUFrameTime": 68.1631011962891,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255922,
+   "FrameRate": 25.891414642334,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3507995605469,
+   "GPUFrameTime": 67.8557968139648,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311255998,
+   "FrameRate": 26.0187358856201,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8176002502441,
+   "GPUFrameTime": 68.0513000488281,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256073,
+   "FrameRate": 26.1140365600586,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4244003295898,
+   "GPUFrameTime": 68.2358016967773,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256149,
+   "FrameRate": 26.221700668335,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0509004592896,
+   "GPUFrameTime": 67.1127014160156,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256225,
+   "FrameRate": 26.2600631713867,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5754995346069,
+   "GPUFrameTime": 67.9898986816406,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256301,
+   "FrameRate": 26.3494777679443,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.2681999206543,
+   "GPUFrameTime": 67.7683029174805,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256378,
+   "FrameRate": 26.216495513916,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1569995880127,
+   "GPUFrameTime": 69.6535034179688,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256454,
+   "FrameRate": 26.2325820922852,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3308000564575,
+   "GPUFrameTime": 68.7872009277344,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256530,
+   "FrameRate": 26.2448596954346,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8866996765137,
+   "GPUFrameTime": 68.2978973388672,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256605,
+   "FrameRate": 26.2968883514404,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4850997924805,
+   "GPUFrameTime": 68.1901016235352,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256683,
+   "FrameRate": 26.2409610748291,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5859003067017,
+   "GPUFrameTime": 68.9318008422852,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256759,
+   "FrameRate": 26.2026634216309,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.2129001617432,
+   "GPUFrameTime": 68.7441024780273,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256834,
+   "FrameRate": 26.2890033721924,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0170001983643,
+   "GPUFrameTime": 67.8759002685547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256910,
+   "FrameRate": 26.3514823913574,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9334001541138,
+   "GPUFrameTime": 67.1802978515625,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311256986,
+   "FrameRate": 26.3337078094482,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6248998641968,
+   "GPUFrameTime": 68.1720962524414,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257061,
+   "FrameRate": 26.3435153961182,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4934997558594,
+   "GPUFrameTime": 67.6931991577148,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257140,
+   "FrameRate": 26.224422454834,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3226003646851,
+   "GPUFrameTime": 68.9766006469727,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257214,
+   "FrameRate": 26.2713756561279,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6381998062134,
+   "GPUFrameTime": 67.2805023193359,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257293,
+   "FrameRate": 25.9827938079834,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0764999389648,
+   "GPUFrameTime": 70.2425994873047,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257371,
+   "FrameRate": 25.968879699707,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.9911003112793,
+   "GPUFrameTime": 68.963996887207,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257454,
+   "FrameRate": 25.8305835723877,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.0459995269775,
+   "GPUFrameTime": 69.2823028564453,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257530,
+   "FrameRate": 25.6911659240723,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.6469993591309,
+   "GPUFrameTime": 70.5602035522461,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257612,
+   "FrameRate": 25.3261852264404,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.0188999176025,
+   "GPUFrameTime": 73.0130004882813,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257691,
+   "FrameRate": 25.3086433410645,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.4625997543335,
+   "GPUFrameTime": 70.2791976928711,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257772,
+   "FrameRate": 25.136962890625,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5143003463745,
+   "GPUFrameTime": 72.5980987548828,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257854,
+   "FrameRate": 24.9856071472168,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3267002105713,
+   "GPUFrameTime": 73.3110961914063,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311257934,
+   "FrameRate": 24.8983478546143,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3489999771118,
+   "GPUFrameTime": 72.3855972290039,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258014,
+   "FrameRate": 24.8939037322998,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8979997634888,
+   "GPUFrameTime": 71.788200378418,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258096,
+   "FrameRate": 24.9078102111816,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6409997940063,
+   "GPUFrameTime": 71.7483978271484,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258173,
+   "FrameRate": 24.9559764862061,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.4581003189087,
+   "GPUFrameTime": 71.5827026367188,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258257,
+   "FrameRate": 24.8804759979248,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 11.6324996948242,
+   "GPUFrameTime": 70.915901184082,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258336,
+   "FrameRate": 24.8953647613525,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.0426998138428,
+   "GPUFrameTime": 71.7714996337891,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258415,
+   "FrameRate": 24.9744396209717,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0911998748779,
+   "GPUFrameTime": 70.4674987792969,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258494,
+   "FrameRate": 25.1129341125488,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0396995544434,
+   "GPUFrameTime": 71.0168991088867,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258574,
+   "FrameRate": 25.0860042572021,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6373996734619,
+   "GPUFrameTime": 72.0025024414063,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258653,
+   "FrameRate": 25.1131114959717,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6091995239258,
+   "GPUFrameTime": 71.2199020385742,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258732,
+   "FrameRate": 25.1815967559814,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.834400177002,
+   "GPUFrameTime": 70.6103973388672,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258812,
+   "FrameRate": 25.1685695648193,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6696996688843,
+   "GPUFrameTime": 70.8794021606445,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258894,
+   "FrameRate": 24.9229831695557,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9652996063232,
+   "GPUFrameTime": 74.2109985351563,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311258974,
+   "FrameRate": 24.9147491455078,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.7104997634888,
+   "GPUFrameTime": 71.6764984130859,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259054,
+   "FrameRate": 25.014217376709,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.8203001022339,
+   "GPUFrameTime": 70.6343002319336,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259134,
+   "FrameRate": 24.9782695770264,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3794002532959,
+   "GPUFrameTime": 71.9304962158203,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259213,
+   "FrameRate": 25.0292148590088,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5599002838135,
+   "GPUFrameTime": 70.5858993530273,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259293,
+   "FrameRate": 25.0128288269043,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1443004608154,
+   "GPUFrameTime": 71.436897277832,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259374,
+   "FrameRate": 24.9014282226563,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3992004394531,
+   "GPUFrameTime": 72.3561019897461,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259455,
+   "FrameRate": 24.9836311340332,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.7839002609253,
+   "GPUFrameTime": 71.4411010742188,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259535,
+   "FrameRate": 25.0147724151611,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6020002365112,
+   "GPUFrameTime": 71.2071990966797,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259612,
+   "FrameRate": 25.0770816802979,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.8999004364014,
+   "GPUFrameTime": 71.0511016845703,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259692,
+   "FrameRate": 25.1174163818359,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.3831996917725,
+   "GPUFrameTime": 71.1119003295898,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259772,
+   "FrameRate": 25.0842304229736,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.2981004714966,
+   "GPUFrameTime": 70.8595962524414,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259852,
+   "FrameRate": 25.1061897277832,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.816499710083,
+   "GPUFrameTime": 70.7226028442383,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311259932,
+   "FrameRate": 25.0925998687744,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7063999176025,
+   "GPUFrameTime": 71.9220962524414,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260015,
+   "FrameRate": 25.08522605896,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.4034996032715,
+   "GPUFrameTime": 71.4173965454102,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260098,
+   "FrameRate": 25.035062789917,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.3705005645752,
+   "GPUFrameTime": 71.9440994262695,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260177,
+   "FrameRate": 25.0234222412109,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 18.74169921875,
+   "GPUFrameTime": 71.4129028320313,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260253,
+   "FrameRate": 25.0025825500488,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 17.8262996673584,
+   "GPUFrameTime": 71.4919967651367,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260333,
+   "FrameRate": 24.9430255889893,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.1927995681763,
+   "GPUFrameTime": 71.5635986328125,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260413,
+   "FrameRate": 25.0053768157959,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7227001190186,
+   "GPUFrameTime": 70.6836013793945,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260497,
+   "FrameRate": 24.9142570495605,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.2649002075195,
+   "GPUFrameTime": 72.5716018676758,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260572,
+   "FrameRate": 25.0527534484863,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5929002761841,
+   "GPUFrameTime": 69.4515991210938,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260652,
+   "FrameRate": 25.1038265228271,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1810998916626,
+   "GPUFrameTime": 69.5727005004883,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260731,
+   "FrameRate": 25.1297397613525,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.1971998214722,
+   "GPUFrameTime": 70.3691024780273,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260811,
+   "FrameRate": 25.1236934661865,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6768999099731,
+   "GPUFrameTime": 70.8094024658203,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260892,
+   "FrameRate": 24.9673728942871,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.875,
+   "GPUFrameTime": 71.9739990234375,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311260971,
+   "FrameRate": 25.1059455871582,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.9710998535156,
+   "GPUFrameTime": 68.6781005859375,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261051,
+   "FrameRate": 25.0271854400635,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.8487997055054,
+   "GPUFrameTime": 71.5371017456055,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261131,
+   "FrameRate": 25.0228633880615,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.888500213623,
+   "GPUFrameTime": 71.0112991333008,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261210,
+   "FrameRate": 25.0744934082031,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5534000396729,
+   "GPUFrameTime": 70.190803527832,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261289,
+   "FrameRate": 25.0867385864258,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0719995498657,
+   "GPUFrameTime": 70.809196472168,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261368,
+   "FrameRate": 25.2170791625977,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6417999267578,
+   "GPUFrameTime": 68.5787963867188,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261447,
+   "FrameRate": 25.319709777832,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.1143999099731,
+   "GPUFrameTime": 69.3765029907227,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261523,
+   "FrameRate": 25.4055728912354,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.9934997558594,
+   "GPUFrameTime": 68.7120971679688,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261604,
+   "FrameRate": 25.3459186553955,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5178003311157,
+   "GPUFrameTime": 69.2424011230469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261683,
+   "FrameRate": 25.3451557159424,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6524000167847,
+   "GPUFrameTime": 69.8705978393555,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261764,
+   "FrameRate": 25.1295261383057,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5888996124268,
+   "GPUFrameTime": 72.2197036743164,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261843,
+   "FrameRate": 25.1604633331299,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5971002578735,
+   "GPUFrameTime": 70.5782012939453,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311261923,
+   "FrameRate": 25.1545925140381,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6758003234863,
+   "GPUFrameTime": 70.7257995605469,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262001,
+   "FrameRate": 25.2788696289063,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6267004013062,
+   "GPUFrameTime": 69.1266021728516,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262079,
+   "FrameRate": 25.3923683166504,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7237997055054,
+   "GPUFrameTime": 69.0146026611328,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262156,
+   "FrameRate": 25.4922733306885,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.9395999908447,
+   "GPUFrameTime": 68.8405990600586,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262240,
+   "FrameRate": 25.5337066650391,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7815999984741,
+   "GPUFrameTime": 69.6993026733398,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262315,
+   "FrameRate": 25.564733505249,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 18.8838996887207,
+   "GPUFrameTime": 69.431396484375,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262391,
+   "FrameRate": 25.5826263427734,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 16.1289005279541,
+   "GPUFrameTime": 68.6613998413086,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262469,
+   "FrameRate": 25.524751663208,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.9840002059937,
+   "GPUFrameTime": 69.8962020874023,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262549,
+   "FrameRate": 25.3999576568604,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5839004516602,
+   "GPUFrameTime": 70.9037017822266,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262628,
+   "FrameRate": 25.358549118042,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7538995742798,
+   "GPUFrameTime": 70.9559020996094,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262710,
+   "FrameRate": 25.2485008239746,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.802300453186,
+   "GPUFrameTime": 71.8559036254883,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262792,
+   "FrameRate": 24.9324111938477,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 15.1633996963501,
+   "GPUFrameTime": 74.0197982788086,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262873,
+   "FrameRate": 24.9148979187012,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.910400390625,
+   "GPUFrameTime": 71.3159027099609,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311262951,
+   "FrameRate": 24.9376049041748,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 14.5900001525879,
+   "GPUFrameTime": 70.5773010253906,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263032,
+   "FrameRate": 24.9180507659912,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.4279003143311,
+   "GPUFrameTime": 70.7492980957031,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263111,
+   "FrameRate": 25.022066116333,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3100996017456,
+   "GPUFrameTime": 69.4307022094727,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263190,
+   "FrameRate": 25.1168994903564,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.513500213623,
+   "GPUFrameTime": 70.340202331543,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263272,
+   "FrameRate": 24.8967018127441,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.5138998031616,
+   "GPUFrameTime": 73.1638031005859,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263353,
+   "FrameRate": 24.8867607116699,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.6625003814697,
+   "GPUFrameTime": 70.7406997680664,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263432,
+   "FrameRate": 24.9469528198242,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.6112003326416,
+   "GPUFrameTime": 70.6501998901367,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263514,
+   "FrameRate": 24.8608531951904,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.5809001922607,
+   "GPUFrameTime": 71.0085983276367,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263593,
+   "FrameRate": 24.9672775268555,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.9913997650146,
+   "GPUFrameTime": 69.6042022705078,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263671,
+   "FrameRate": 25.1152362823486,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7278995513916,
+   "GPUFrameTime": 69.9220962524414,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263750,
+   "FrameRate": 25.1605625152588,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.7186002731323,
+   "GPUFrameTime": 70.1681976318359,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263830,
+   "FrameRate": 25.1382083892822,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.3177995681763,
+   "GPUFrameTime": 70.9328002929688,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263908,
+   "FrameRate": 25.1842384338379,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.2142000198364,
+   "GPUFrameTime": 70.5558013916016,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311263989,
+   "FrameRate": 25.074987411499,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 12.4086999893188,
+   "GPUFrameTime": 71.2342987060547,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311264068,
+   "FrameRate": 25.1137828826904,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.046199798584,
+   "GPUFrameTime": 70.1801986694336,
+   "VideoMemoryUsage": 0.0
+  },
+  {
+   "TimeStamp": 1791311264150,
+   "FrameRate": 25.0109558105469,
+   "CPUUsage": 1.0,
+   "GPUUsage": 1.0,
+   "CPUFrameTime": 13.0029001235962,
+   "GPUFrameTime": 72.6743011474609,
+   "VideoMemoryUsage": 0.0
+  }
+ ]
+}

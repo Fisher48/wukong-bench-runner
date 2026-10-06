@@ -1,0 +1,12 @@
+Steam root       : /home/fisher48/.steam/steam
+Install dir      : /home/fisher48/.local/share/Steam/steamapps/common/Black Myth Wukong Benchmark Tool
+Config           : /home/fisher48/.local/share/Steam/steamapps/common/Black Myth Wukong Benchmark Tool/b1/Saved/Config/Windows/GameUserSettings.ini
+History dir      : /home/fisher48/.local/share/Steam/steamapps/compatdata/3132990/pfx/drive_c/users/steamuser/AppData/Local/Temp/b1/BenchMarkHistory/Tool
+Proton prefix    : /home/fisher48/.local/share/Steam/steamapps/compatdata/3132990
+Proton version   : 11.0-100
+Launcher exe     : /home/fisher48/.local/share/Steam/steamapps/common/Black Myth Wukong Benchmark Tool/b1_benchmark.exe
+DISPLAY          : :0
+XDG_SESSION_TYPE : x11
+Steam processes  : 40495; 40499; 40500; 40502; 40523; 40568; 40600; 40958
+Graphics         : DRI3: есть, XTEST: есть, DRM: card1, Vulkan ICD: есть, Steam: запущен
+utc now          : 2026-10-07T18:10:07.5002006Z

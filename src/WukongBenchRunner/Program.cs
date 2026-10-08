@@ -394,7 +394,9 @@ public static class Program
 
         var parsed = inputPaths.Select(ResultParser.ParseFile).ToList();
 
-        var screenHeight = ScreenHeight(options);
+        // Высота окна нужна только для таблицы настроек. В готовом результате она уже есть,
+        // поэтому на машине без дисплея (Windows, macOS, CI) xrandr звать не нужно.
+        var screenHeight = HeightFromResults(options, parsed);
 
         var outputRoot = Path.GetFullPath(options.OutputDirectory ?? "results");
         var outputDirectory = Path.Combine(outputRoot, DateTimeStamp());
@@ -476,6 +478,17 @@ public static class Program
     /// Высота окна, от которой считается высота рендера. Берётся у активного выхода xrandr;
     /// если определить не вышло, требуем --render-height, чтобы не писать в конфиг заведомо неверное число.
     /// </summary>
+    private static int HeightFromResults(CommandLineOptions options, IReadOnlyList<BenchmarkResult> parsed)
+    {
+        foreach (var result in parsed)
+        {
+            if (LinuxSystemInfoProvider.ParseResolution(result.Applied.ScreenResolution) is { } resolution && resolution.Height > 0)
+                return resolution.Height;
+        }
+
+        return ScreenHeight(options);
+    }
+
     private static int ScreenHeight(CommandLineOptions options)
     {
         if (options.RenderHeight is { Length: > 0 } manual)

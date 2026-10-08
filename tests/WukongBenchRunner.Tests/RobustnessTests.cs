@@ -427,6 +427,15 @@ public sealed class RobustnessTests : IDisposable
         if (Directory.Exists(_root))
             Directory.Delete(_root, recursive: true);
     }
+
+    [Fact]
+    public void Высота_Окна_Берётся_Из_Готового_Результата_Без_Xrandr()
+    {
+        var result = WukongBenchRunner.Results.ResultParser.ParseFile(Path.Combine("TestData", "result_sample.json"));
+
+        Assert.Equal("1920 × 1200", result.Applied.ScreenResolution);
+        Assert.Equal(1200, LinuxSystemInfoProvider.ParseResolution(result.Applied.ScreenResolution)?.Height);
+    }
 }
 
 internal static class LoadSamplerShim

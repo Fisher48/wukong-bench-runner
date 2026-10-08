@@ -28,6 +28,32 @@ public sealed class ResultParserTests
     }
 
     [Fact]
+    public void Парсер_Считает_Медианные_Времена_Кадра()
+    {
+        var result = ResultParser.ParseFile(SamplePath);
+        var stats = result.FrameStats;
+
+        Assert.NotNull(stats.MedianCpuFrameMs);
+        Assert.NotNull(stats.MedianGpuFrameMs);
+        Assert.Equal(12.5039, stats.MedianCpuFrameMs!.Value, 3);
+        Assert.Equal(68.6590, stats.MedianGpuFrameMs!.Value, 3);
+    }
+
+    [Fact]
+    public void Парсер_Оставляет_Времена_Кадра_Пустыми_Если_Их_Нет()
+    {
+        var stats = ResultParser.ComputeStats(
+        [
+            (10.0, 1.0, 1.0, null, null),
+            (20.0, 1.0, 1.0, null, null),
+        ]);
+
+        Assert.Equal(2, stats.Frames);
+        Assert.Null(stats.MedianCpuFrameMs);
+        Assert.Null(stats.MedianGpuFrameMs);
+    }
+
+    [Fact]
     public void Парсер_Считает_Статистику_По_Records()
     {
         var result = ResultParser.ParseFile(SamplePath);

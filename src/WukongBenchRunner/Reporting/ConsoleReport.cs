@@ -34,6 +34,24 @@ public static class ConsoleReport
                  $"{Num(pass.Result.FpsMinimum),8} {Num(pass.Result.FpsMaximum),8} {stats.Frames,7} {Num(stats.AverageFrameMs),9}");
         }
 
+        var withFrameTimes = report.Passes.Where(pass => pass.Result.FrameStats.MedianCpuFrameMs is not null).ToList();
+        if (withFrameTimes.Count > 0)
+        {
+            Line();
+            Line("ВРЕМЯ КАДРА ПО ДАННЫМ БЕНЧМАРКА (медиана)");
+            Line($"  {"Тест",-12} {"CPU, мс",10} {"GPU, мс",10} {"кадр, мс",10}");
+
+            foreach (var pass in withFrameTimes)
+            {
+                var stats = pass.Result.FrameStats;
+                Line($"  {pass.Title,-12} {Num(stats.MedianCpuFrameMs ?? 0),10} {Num(stats.MedianGpuFrameMs ?? 0),10} {Num(stats.AverageFrameMs),10}");
+            }
+
+            Line();
+            Line("  CPUFrameTime под Proton настоящий, а GPUFrameTime повторяет обратную величину FPS,");
+            Line("  то есть это длина кадра, а не работа видеокарты. Определить узкое место по нему нельзя.");
+        }
+
         if (cpu is not null && gpu is not null)
         {
             var ratio = (cpu.Result.FpsAverage / gpu.Result.FpsAverage).ToString("0.00", CultureInfo.InvariantCulture);

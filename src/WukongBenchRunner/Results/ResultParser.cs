@@ -14,7 +14,9 @@ public sealed record FrameStats(
     double P95Fps,
     double MinFps,
     double MaxFps,
-    double AverageFrameMs);
+    double AverageFrameMs,
+    double? MedianCpuFrameMs,
+    double? MedianGpuFrameMs);
 
 public sealed record AppliedSettings(
     string ScreenResolution,
@@ -143,10 +145,12 @@ public static class ResultParser
         };
     }
 
-    public static FrameStats ComputeStats(IReadOnlyList<(double Fps, double CpuUsage, double GpuUsage)> frames)
+    public static FrameStats ComputeStats(IReadOnlyList<(double Fps, double CpuUsage, double GpuUsage, double? CpuFrameMs, double? GpuFrameMs)> frames)
     {
         var sorted = frames.Select(f => f.Fps).OrderBy(v => v).ToList();
         var average = sorted.Average();
+        var cpuFrame = NullableMedian(frames.Where(f => f.CpuFrameMs > 0).Select(f => f.CpuFrameMs!.Value));
+        var gpuFrame = NullableMedian(frames.Where(f => f.GpuFrameMs > 0).Select(f => f.GpuFrameMs!.Value));
 
         return new FrameStats(
             Frames: sorted.Count,
@@ -157,7 +161,15 @@ public static class ResultParser
             P95Fps: Percentile(sorted, 0.95),
             MinFps: sorted[0],
             MaxFps: sorted[^1],
-            AverageFrameMs: average > 0 ? 1000.0 / average : 0.0);
+            AverageFrameMs: average > 0 ? 1000.0 / average : 0.0,
+            MedianCpuFrameMs: cpuFrame,
+            MedianGpuFrameMs: gpuFrame);
+    }
+
+    private static double? NullableMedian(IEnumerable<double> values)
+    {
+        var sorted = values.OrderBy(v => v).ToList();
+        return sorted.Count == 0 ? null : Median(sorted);
     }
 
     public static double Median(IReadOnlyList<double> sorted)
@@ -181,9 +193,9 @@ public static class ResultParser
     private static string Note(bool reliable) =>
         reliable ? string.Empty : "под Proton счётчики Windows не работают (значение постоянно 1%)";
 
-    private static List<(double Fps, double CpuUsage, double GpuUsage)> ReadFrames(JsonElement root)
+    private static List<(double Fps, double CpuUsage, double GpuUsage, double? CpuFrameMs, double? GpuFrameMs)> ReadFrames(JsonElement root)
     {
-        var frames = new List<(double, double, double)>();
+        var frames = new List<(double, double, double, double?, double?)>();
 
         if (!root.TryGetProperty("Records", out var records) || records.ValueKind != JsonValueKind.Array)
             return frames;
@@ -196,7 +208,9 @@ public static class ResultParser
             frames.Add((
                 NullableNumber(record, "FrameRate") ?? 0.0,
                 NullableNumber(record, "CPUUsage") ?? 0.0,
-                NullableNumber(record, "GPUUsage") ?? 0.0));
+                NullableNumber(record, "GPUUsage") ?? 0.0,
+                NullableNumber(record, "CPUFrameTime"),
+                NullableNumber(record, "GPUFrameTime")));
         }
 
         return frames;

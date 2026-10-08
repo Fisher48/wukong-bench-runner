@@ -81,6 +81,27 @@ public static class ReportFormatter
                 $"| {Num(pass.Result.FpsMinimum)} | {Num(pass.Result.FpsMaximum)} | {stats.Frames} | {Num(stats.AverageFrameMs)} |");
         }
 
+        var withFrameTimes = passes.Where(pass => pass.Result.FrameStats.MedianCpuFrameMs is not null).ToList();
+        if (withFrameTimes.Count > 0)
+        {
+            builder.AppendLine();
+            builder.AppendLine("Время кадра по данным бенчмарка (медиана):");
+            builder.AppendLine();
+            builder.AppendLine("| Тест | CPUFrameTime, мс | GPUFrameTime, мс | Длина кадра, мс |");
+            builder.AppendLine("| --- | --- | --- | --- |");
+
+            foreach (var pass in withFrameTimes)
+            {
+                var stats = pass.Result.FrameStats;
+                builder.AppendLine(
+                    $"| {pass.Title} | {Num(stats.MedianCpuFrameMs ?? 0)} | {Num(stats.MedianGpuFrameMs ?? 0)} | {Num(stats.AverageFrameMs)} |");
+            }
+
+            builder.AppendLine();
+            builder.AppendLine("`CPUFrameTime` под Proton настоящий, а `GPUFrameTime` повторяет обратную величину FPS, ");
+            builder.AppendLine("то есть это длина кадра, а не работа видеокарты. Определить узкое место по нему нельзя.");
+        }
+
         builder.AppendLine();
         builder.AppendLine("Дополнительно из JSON бенчмарка:");
         builder.AppendLine();
@@ -210,6 +231,8 @@ public static class ReportFormatter
                 onePercentLowFps = pass.Result.FrameStats.OnePercentLowFps,
                 pointOnePercentLowFps = pass.Result.FrameStats.PointOnePercentLowFps,
                 averageFrameMs = pass.Result.FrameStats.AverageFrameMs,
+                medianCpuFrameMs = pass.Result.FrameStats.MedianCpuFrameMs,
+                medianGpuFrameMs = pass.Result.FrameStats.MedianGpuFrameMs,
                 reportedCpuAverage = pass.Result.ReportedCpuAverage,
                 reportedGpuAverage = pass.Result.ReportedGpuAverage,
                 cpuLoadReliable = pass.Result.CpuLoadReliable,

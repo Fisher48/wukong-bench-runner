@@ -164,7 +164,10 @@ public static class ReportFormatter
             builder.AppendLine("Важно: `gpu_busy_percent` у AMD показывает занятость любого движка GPU, а не его загрузку,");
             builder.AppendLine("поэтому 90+% в CPU-тесте не означает, что видеокарда ограничивает кадр. Проверка выполнена");
             builder.AppendLine("контрольным прогоном: при падении масштаба рендера с 50% до 25% (в 4 раза меньше пикселей)");
-            builder.AppendLine("FPS не изменился — значит кадр ограничен процессором, а не видеокартой.");
+            builder.AppendLine("результат упал внутрь разброса серии — значит работа видеокарты не держит кадр.");
+            builder.AppendLine("При этом `CPUFrameTime` показывает заметно меньше длины кадра, поэтому эти FPS измеряют");
+            builder.AppendLine("конвейер Linux + Proton целиком, а не процессор в одиночку: часть времени уходит на");
+            builder.AppendLine("накладные расходы Proton и вывод кадра.");
         }
 
         builder.AppendLine();

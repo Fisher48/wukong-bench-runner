@@ -86,16 +86,16 @@ public sealed class SettingsPatchTests
 
         foreach (var key in new[]
                  {
-                     "sg.AntiAliasingQuality", "sg.ShadowQuality", "sg.GlobalIlluminationQuality",
+                     "sg.ViewDistanceQuality", "sg.AntiAliasingQuality", "sg.ShadowQuality", "sg.GlobalIlluminationQuality",
                      "sg.ReflectionQuality", "sg.PostProcessQuality", "sg.TextureQuality", "sg.EffectsQuality",
-                     "sg.ShadingQuality",
+                     "sg.FoliageQuality", "sg.ShadingQuality",
                  })
         {
             Assert.Equal("0", document.Get(GameSettingsWriter.ScalabilitySection, key));
         }
 
-        Assert.Equal("5", document.Get(GameSettingsWriter.ScalabilitySection, "sg.ViewDistanceQuality"));
-        Assert.Equal("5", document.Get(GameSettingsWriter.ScalabilitySection, "sg.FoliageQuality"));
+        Assert.Equal("0", document.Get(GameSettingsWriter.ScalabilitySection, "sg.ViewDistanceQuality"));
+        Assert.Equal("0", document.Get(GameSettingsWriter.ScalabilitySection, "sg.FoliageQuality"));
     }
 
     [Fact]

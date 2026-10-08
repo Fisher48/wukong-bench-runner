@@ -7,6 +7,6 @@ Proton version   : 11.0-100
 Launcher exe     : /home/fisher48/.local/share/Steam/steamapps/common/Black Myth Wukong Benchmark Tool/b1_benchmark.exe
 DISPLAY          : :0
 XDG_SESSION_TYPE : x11
-Steam processes  : 40495; 40499; 40500; 40502; 40523; 40568; 40600; 40958
+Steam processes  : 11412; 11416; 11417; 11419; 11440; 11493; 11516; 11864
 Graphics         : DRI3: есть, XTEST: есть, DRM: card1, Vulkan ICD: есть, Steam: запущен
-utc now          : 2026-10-07T18:10:07.5002006Z
+utc now          : 2026-10-08T17:33:08.8728700Z

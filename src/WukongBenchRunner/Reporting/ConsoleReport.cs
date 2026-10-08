@@ -34,6 +34,22 @@ public static class ConsoleReport
                  $"{Num(pass.Result.FpsMinimum),8} {Num(pass.Result.FpsMaximum),8} {stats.Frames,7} {Num(stats.AverageFrameMs),9}");
         }
 
+        var withRepeats = report.Passes.Where(pass => pass.AllRuns.Count > 1).ToList();
+        if (withRepeats.Count > 0)
+        {
+            Line();
+            Line("СЕРИЯ ПРОГОНОВ");
+            Line($"  {"Тест",-12} {"прогонов",9} {"медиана",9} {"минимум",9} {"максимум",9} {"разброс",9}");
+
+            foreach (var pass in withRepeats)
+            {
+                var values = pass.AllRuns.Select(r => r.FpsAverage).OrderBy(v => v).ToList();
+                var median = ResultParser.Median(values);
+                var spread = values[^1] - values[0];
+                Line($"  {pass.Title,-12} {values.Count,9} {Num(median),9} {Num(values[0]),9} {Num(values[^1]),9} {Num(spread),9}");
+            }
+        }
+
         var withFrameTimes = report.Passes.Where(pass => pass.Result.FrameStats.MedianCpuFrameMs is not null).ToList();
         if (withFrameTimes.Count > 0)
         {
@@ -108,9 +124,10 @@ public static class ConsoleReport
         Line("Отчёты сохранены в results/<дата>/: report.md, report.json, *_raw.json");
     }
 
-    public static void WriteResult(BenchmarkResult result, string title)
+    public static void WriteResult(BenchmarkResult result, string title, string? attempt = null)
     {
-        Line($"{title}: FPS ср. {Num(result.FpsAverage)}, 95% {Num(result.Fps95)}, мин. {Num(result.FpsMinimum)}, " +
+        var label = attempt is null ? title : $"{title}, {attempt}";
+        Line($"{label}: FPS ср. {Num(result.FpsAverage)}, 95% {Num(result.Fps95)}, мин. {Num(result.FpsMinimum)}, " +
              $"кадров {result.FrameStats.Frames}, разрешение {result.Applied.ScreenResolution}, " +
              $"масштаб рендера {result.Applied.RenderScalePercent}%");
     }

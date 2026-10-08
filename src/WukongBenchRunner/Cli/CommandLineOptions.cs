@@ -12,6 +12,9 @@ public sealed class CommandLineOptions
     public string? OutputDirectory { get; private set; }
     public string? OnlyKind { get; private set; }
     public int TimeoutMinutes { get; private set; } = 15;
+
+    /// <summary>Сколько раз прогнать каждый профиль: медиана по серии устойчивее одного замера.</summary>
+    public int RepeatCount { get; private set; } = 1;
     public int WindowTimeoutSeconds { get; private set; } = 300;
     public bool GpuRayTracing { get; private set; }
     public double? StartX { get; private set; }
@@ -90,6 +93,13 @@ public sealed class CommandLineOptions
                         throw new ArgumentException($"--timeout требует целое число минут > 0, получено: {timeout}");
 
                     options.TimeoutMinutes = minutes;
+                    break;
+                case "--repeat":
+                    var repeat = Next(args, ref i, arg);
+                    if (!int.TryParse(repeat, out var times) || times is < 1 or > 10)
+                        throw new ArgumentException($"--repeat требует целое число от 1 до 10, получено: {repeat}");
+
+                    options.RepeatCount = times;
                     break;
                 case "--layout-start-x":
                     options.StartX = Fraction(Next(args, ref i, arg), arg);
@@ -185,6 +195,7 @@ public sealed class CommandLineOptions
               --press-return            в probe нажать Enter вместо клика
               --keep                   не закрывать бенчмарк после probe
               --from-results <cpu.json> <gpu.json>   построить отчёт без запуска бенчмарка
+              --repeat <число>          сколько раз прогнать каждый профиль (1..10, по умолчанию 1)
 
             Во время прогона не трогайте мышь и клавиатуру: окно должно оставаться в фокусе.
             """);

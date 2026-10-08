@@ -27,7 +27,12 @@ public sealed record PassReport(
     IReadOnlyList<(string Parameter, string Value)> Settings,
     IReadOnlyList<string> Rationale,
     string RawCopyPath,
-    LoadSample? Load = null);
+    LoadSample? Load = null,
+    IReadOnlyList<BenchmarkResult>? Runs = null)
+{
+    /// <summary>Все прогоны этого прохода; при одном прогоне содержит только <see cref="Result"/>.</summary>
+    public IReadOnlyList<BenchmarkResult> AllRuns => Runs is { Count: > 0 } ? Runs : [Result];
+}
 
 public static class ReportFormatter
 {
@@ -79,6 +84,25 @@ public static class ReportFormatter
             builder.AppendLine(
                 $"| {pass.Title} | {Num(pass.Result.FpsAverage)} | {Num(pass.Result.Fps95)} | {Num(stats.OnePercentLowFps)} " +
                 $"| {Num(pass.Result.FpsMinimum)} | {Num(pass.Result.FpsMaximum)} | {stats.Frames} | {Num(stats.AverageFrameMs)} |");
+        }
+
+        var withRepeats = passes.Where(pass => pass.AllRuns.Count > 1).ToList();
+        if (withRepeats.Count > 0)
+        {
+            builder.AppendLine();
+            builder.AppendLine("Серия прогонов (одиночный замер неустойчив, поэтому их несколько):");
+            builder.AppendLine();
+            builder.AppendLine("| Тест | Прогонов | FPS каждого прогона | Медиана | Минимум | Максимум | Разброс |");
+            builder.AppendLine("| --- | --- | --- | --- | --- | --- | --- |");
+
+            foreach (var pass in withRepeats)
+            {
+                var values = pass.AllRuns.Select(r => r.FpsAverage).OrderBy(v => v).ToList();
+                var listed = string.Join(", ", values.Select(Num));
+                builder.AppendLine(
+                    $"| {pass.Title} | {values.Count} | {listed} | {Num(ResultParser.Median(values))} " +
+                    $"| {Num(values[0])} | {Num(values[^1])} | {Num(values[^1] - values[0])} |");
+            }
         }
 
         var withFrameTimes = passes.Where(pass => pass.Result.FrameStats.MedianCpuFrameMs is not null).ToList();
@@ -232,6 +256,16 @@ public static class ReportFormatter
                 pointOnePercentLowFps = pass.Result.FrameStats.PointOnePercentLowFps,
                 averageFrameMs = pass.Result.FrameStats.AverageFrameMs,
                 medianCpuFrameMs = pass.Result.FrameStats.MedianCpuFrameMs,
+                runs = pass.AllRuns.Select(r => new
+                {
+                    fpsAverage = r.FpsAverage,
+                    fps95 = r.Fps95,
+                    fpsMinimum = r.FpsMinimum,
+                    fpsMaximum = r.FpsMaximum,
+                    frames = r.FrameStats.Frames,
+                    medianCpuFrameMs = r.FrameStats.MedianCpuFrameMs,
+                    medianGpuFrameMs = r.FrameStats.MedianGpuFrameMs,
+                }).ToList(),
                 medianGpuFrameMs = pass.Result.FrameStats.MedianGpuFrameMs,
                 reportedCpuAverage = pass.Result.ReportedCpuAverage,
                 reportedGpuAverage = pass.Result.ReportedGpuAverage,

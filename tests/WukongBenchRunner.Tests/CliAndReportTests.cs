@@ -10,6 +10,17 @@ namespace WukongBenchRunner.Tests;
 public sealed class CliAndReportTests
 {
     [Fact]
+    public void Cli_Разбирает_Число_Повторов()
+    {
+        Assert.Equal(1, CommandLineOptions.Parse(["run"]).RepeatCount);
+        Assert.Equal(3, CommandLineOptions.Parse(["run", "--repeat", "3"]).RepeatCount);
+
+        Assert.Throws<ArgumentException>(() => CommandLineOptions.Parse(["run", "--repeat", "0"]));
+        Assert.Throws<ArgumentException>(() => CommandLineOptions.Parse(["run", "--repeat", "11"]));
+        Assert.Throws<ArgumentException>(() => CommandLineOptions.Parse(["run", "--repeat", "abc"]));
+    }
+
+    [Fact]
     public void Cli_Разбирает_Аргументы()
     {
         var options = CommandLineOptions.Parse(
@@ -68,6 +79,45 @@ public sealed class CliAndReportTests
         Assert.Equal(MenuStep.OpenBenchmark, navigator.StepFor(1));
         Assert.Equal(MenuStep.Confirm, navigator.StepFor(2));
         Assert.Equal(MenuStep.SkipIntro, navigator.StepFor(3));
+    }
+
+    [Fact]
+    public void Отчёт_Показывает_Серию_Прогонов_С_Медианой_И_Разбросом()
+    {
+        var result = ResultParser.ParseFile(Path.Combine("TestData", "result_sample.json"));
+        var system = LinuxSystemInfoProvider.Collect(Path.Combine("TestData", "не существует"), "11.0-100");
+        var runs = new[] { result, result, result };
+
+        var report = new RunReport(
+            DateTime.Now,
+            system,
+            new BenchmarkInstallationInfo("/steam", "/install", "/config.ini", "/history", "11.0-100", "XTEST"),
+            [
+                new PassReport(TestKind.Cpu, "CPU-тест", result, ProfileCatalog.Cpu().Summary, ProfileCatalog.Cpu().Rationale, "cpu_raw.json", null, runs),
+            ]);
+
+        var markdown = ReportFormatter.Markdown(report);
+
+        Assert.Contains("Серия прогонов", markdown);
+        Assert.Contains("Медиана", markdown);
+        Assert.Contains("Разброс", markdown);
+    }
+
+    [Fact]
+    public void Один_Прогон_Не_Печатает_Серию()
+    {
+        var result = ResultParser.ParseFile(Path.Combine("TestData", "result_sample.json"));
+        var system = LinuxSystemInfoProvider.Collect(Path.Combine("TestData", "не существует"), "11.0-100");
+
+        var report = new RunReport(
+            DateTime.Now,
+            system,
+            new BenchmarkInstallationInfo("/steam", "/install", "/config.ini", "/history", "11.0-100", "XTEST"),
+            [
+                new PassReport(TestKind.Cpu, "CPU-тест", result, ProfileCatalog.Cpu().Summary, ProfileCatalog.Cpu().Rationale, "cpu_raw.json"),
+            ]);
+
+        Assert.DoesNotContain("Серия прогонов", ReportFormatter.Markdown(report));
     }
 
     [Fact]

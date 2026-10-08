@@ -268,36 +268,67 @@ public static class Program
                 ApplyProfile(installation.ConfigPath, profile);
                 Console.WriteLine($"[{profile.Title}] настройки записаны в {installation.ConfigPath}");
 
-                var graphics = GraphicsDiagnostics.Probe();
-                var runner = new BenchmarkRunner(
-                    installation,
-                    options.Layout,
-                    TimeSpan.FromMinutes(options.TimeoutMinutes),
-                    TimeSpan.FromSeconds(options.WindowTimeoutSeconds),
-                    graphics);
-                var result = runner.Run(Write, cancellation.Token);
-
                 var kindName = profile.Kind.ToString().ToLowerInvariant();
-                var rawCopy = Path.Combine(outputDirectory, $"{kindName}_raw.json");
-                File.Copy(result.Path, rawCopy, overwrite: true);
+                var runs = new List<BenchmarkResult>();
+                LoadSample? lastLoad = null;
+                string rawCopy = string.Empty;
+                BenchmarkResult? representative = null;
 
-                if (runner.LastLoadSample is { } load)
-                    File.WriteAllText(Path.Combine(outputDirectory, $"{kindName}_load.json"), JsonSerializer.Serialize(load, JsonOptions));
-
-                ConsoleReport.WriteResult(result, profile.Title);
-
-                foreach (var warning in AppliedCheck.Warnings(result.Applied, profile.Settings.RenderScalePercent))
+                for (var attempt = 1; attempt <= options.RepeatCount; attempt++)
                 {
-                    Console.WriteLine($"  ВНИМАНИЕ: {profile.Title}: {warning}");
-                    appliedWarnings.Add($"[{profile.Title}] {warning}");
+                    if (options.RepeatCount > 1)
+                        Console.WriteLine($"[{profile.Title}] прогон {attempt} из {options.RepeatCount}");
+
+                    var graphics = GraphicsDiagnostics.Probe();
+                    var runner = new BenchmarkRunner(
+                        installation,
+                        options.Layout,
+                        TimeSpan.FromMinutes(options.TimeoutMinutes),
+                        TimeSpan.FromSeconds(options.WindowTimeoutSeconds),
+                        graphics);
+                    var result = runner.Run(Write, cancellation.Token);
+                    runs.Add(result);
+
+                    var suffix = options.RepeatCount > 1 ? $"_{attempt}" : string.Empty;
+                    rawCopy = Path.Combine(outputDirectory, $"{kindName}{suffix}_raw.json");
+                    File.Copy(result.Path, rawCopy, overwrite: true);
+
+                    if (runner.LastLoadSample is { } load)
+                    {
+                        lastLoad = load;
+                        File.WriteAllText(Path.Combine(outputDirectory, $"{kindName}{suffix}_load.json"), JsonSerializer.Serialize(load, JsonOptions));
+                    }
+
+                    ConsoleReport.WriteResult(result, profile.Title, options.RepeatCount > 1 ? $"прогон {attempt} из {options.RepeatCount}" : null);
+
+                    foreach (var warning in AppliedCheck.Warnings(result.Applied, profile.Settings.RenderScalePercent))
+                    {
+                        Console.WriteLine($"  ВНИМАНИЕ: {profile.Title}: {warning}");
+                        appliedWarnings.Add($"[{profile.Title}] {warning}");
+                    }
+
+                    if (options.RepeatCount > 1)
+                        Console.WriteLine($"  Итог по прогону: средний FPS по {runs.Count} — {MedianFps(runs).ToString("0.00", CultureInfo.InvariantCulture)}");
+
+                    representative = MedianRun(runs);
                 }
 
-                passes.Add(new PassReport(profile.Kind, profile.Title, result, profile.Summary, profile.Rationale, rawCopy, runner.LastLoadSample));
+                passes.Add(new PassReport(
+                    profile.Kind,
+                    profile.Title,
+                    representative ?? runs[^1],
+                    profile.Summary,
+                    profile.Rationale,
+                    rawCopy,
+                    lastLoad,
+                    runs));
 
-                File.WriteAllText(Path.Combine(outputDirectory, $"{profile.Kind.ToString().ToLowerInvariant()}_run.log"),
-                    $"Профиль: {profile.Title}{Environment.NewLine}Результат: {result.Path}{Environment.NewLine}" +
-                    $"Применено: {result.Applied.ScreenResolution}, масштаб {result.Applied.RenderScalePercent}%, " +
-                    $"качество {result.Applied.QualityLevel}{Environment.NewLine}");
+                File.WriteAllText(Path.Combine(outputDirectory, $"{kindName}_run.log"),
+                    $"Профиль: {profile.Title}{Environment.NewLine}Прогонов: {runs.Count}{Environment.NewLine}" +
+                    $"Результат: {representative?.Path ?? rawCopy}{Environment.NewLine}" +
+                    $"Средний FPS по прогонам: {MedianFps(runs).ToString("0.00", CultureInfo.InvariantCulture)}{Environment.NewLine}" +
+                    $"Применено: {representative?.Applied.ScreenResolution}, масштаб {representative?.Applied.RenderScalePercent}%, " +
+                    $"качество {representative?.Applied.QualityLevel}{Environment.NewLine}");
             }
         }
         finally
@@ -528,6 +559,16 @@ public static class Program
 
         throw new BenchmarkRunException("Бенчмарк не запустился за отведённое время.");
     }
+
+    private static double MedianFps(IReadOnlyList<BenchmarkResult> runs)
+    {
+        var sorted = runs.Select(r => r.FpsAverage).OrderBy(v => v).ToList();
+        return ResultParser.Median(sorted);
+    }
+
+    /// <summary>Прогон с медианным FPS: при нескольких прогонах это представитель всей серии.</summary>
+    private static BenchmarkResult MedianRun(IReadOnlyList<BenchmarkResult> runs) =>
+        runs.OrderBy(r => r.FpsAverage).ToList()[runs.Count / 2];
 
     private static bool SteamRunning() => Shell.SteamClientPid() is not null;
 

@@ -63,7 +63,7 @@ sudo apt install x11-utils          # если ещё не стоит
 
 git clone https://github.com/Fisher48/wukong-bench-runner.git
 cd wukong-bench-runner
-dotnet test                          # 99 тестов, Steam и игра для них не нужны
+dotnet test                          # 110 тестов, Steam и игра для них не нужны
 dotnet run --project src/WukongBenchRunner -- inspect   # что найдено и готово ли окружение
 dotnet run --project src/WukongBenchRunner -- run       # основной сценарий, ~8 минут
 ```

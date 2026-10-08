@@ -26,7 +26,9 @@ public sealed record GraphicsDiagnostics(
 
     public string? Warning => Blocked
         ? "Внимание: в текущем XWayland нет расширения DRI3. Proton в этом случае не может вывести кадр, "
-          + "игра завершается сразу после старта (код 10). Перезайдите в сессию или используйте Xorg."
+          + "игра завершается сразу после старта (код 10). В GNOME на Wayland XWayland поднимается в "
+          + "режиме rootless и расширения не получает: выйдите из системы, на экране входа нажмите "
+          + "шестерёнку рядом с именем и выберите 'Ubuntu on Xorg'."
         : null;
 
     public static GraphicsDiagnostics Probe() => Probe(ShellProbeFactory.Default());

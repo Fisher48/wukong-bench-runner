@@ -190,7 +190,8 @@ public sealed class BenchmarkRunner(
         graphics is { Dri3Available: false }
             ? "Требуется X11/XWayland с расширением DRI3: Proton без него не может вывести кадр и игра "
               + "завершается сразу после старта (см. сообщение 'vulkan: No DRI3 support detected'). "
-              + "Проверьте `xdpyinfo | grep -i dri3`; если расширения нет, перезайдите в сессию или используйте Xorg."
+              + "Проверьте `xdpyinfo | grep -i dri3`; если расширения нет, нужна сессия Xorg: выйдите из "
+              + "системы и выберите на экране входа 'Ubuntu on Xorg' вместо Wayland."
             : "Проверьте, что окно бенчмарка не перекрыто и в фокусе, а координаты меню совпадают (--layout).";
 
     private static string DescribeLoad(LoadSample sample)

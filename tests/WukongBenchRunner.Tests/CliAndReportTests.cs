@@ -299,3 +299,188 @@ public sealed class CliAndReportTests
         Assert.Contains(longReason[..30], string.Join(" ", lines.Skip(bulletIndex).Take(3)));
     }
 }
+
+public sealed class HtmlReportTests
+{
+    private static RunReport Report() => HtmlReportTestsFixture.Report();
+
+    [Fact]
+    public void Html_Содержит_График_Времени_Кадра()
+    {
+        var html = HtmlReport.Html(Report());
+
+        Assert.Contains("<svg", html);
+        Assert.Contains("viewBox=\"0 0 960 220\"", html);
+        Assert.Contains("Длительность кадра по ходу прогона", html);
+        Assert.Contains("<polyline", html);
+    }
+
+    [Fact]
+    public void График_Сводит_Тысячи_Кадров_В_Ограниченное_Число_Колонок()
+    {
+        var many = Enumerable.Range(1, 1956).Select(i => 60.0 + i % 40).ToList();
+
+        var columns = HtmlReport.ColumnMaxima(many, 600);
+
+        Assert.Equal(600, columns.Count);
+        Assert.Equal(many.Max(), columns.Max());
+        Assert.True(columns.Count <= 600);
+        // когда кадров меньше, чем колонок, данные не пережимаются
+        var few = many.Take(100).ToList();
+        Assert.Equal(few, HtmlReport.ColumnMaxima(few, 600));
+    }
+
+    [Fact]
+    public void Html_Экранирует_Значения_Из_Системы()
+    {
+        var nasty = HtmlReportTestsFixture.WithCpuModel(Report(), "A<B & C>D \"q\"");
+
+        var html = HtmlReport.Html(nasty);
+
+        Assert.Contains("A&lt;B &amp; C&gt;D", html);
+        Assert.DoesNotContain("A<B & C>D", html);
+    }
+
+    [Fact]
+    public void Html_Не_Ломается_Без_Покадровых_Данных()
+    {
+        var html = HtmlReport.Html(HtmlReportTestsFixture.WithoutFrameTimes(Report()));
+
+        Assert.Contains("<svg", html);
+        Assert.NotNull(html);
+    }
+
+    [Fact]
+    public void Html_Не_Тянет_Внешние_Ресурсы()
+    {
+        var html = HtmlReport.Html(Report());
+
+        Assert.DoesNotContain("<script", html);
+        Assert.DoesNotContain("cdn.", html);
+        Assert.DoesNotContain("http://", html);
+        Assert.DoesNotContain("https://", html);
+    }
+}
+
+public sealed class ReportConsistencyTests
+{
+    /// <summary>
+    /// Один и тот же прогон печатается в консоль, markdown, JSON и HTML. Числа обязаны совпадать:
+    /// расхождение между форматами читается как ошибка в данных, а не как ошибка вывода.
+    /// </summary>
+    [Fact]
+    public void Числа_В_Четырёх_Форматах_Отчёта_Совпадают()
+    {
+        var report = HtmlReportTestsFixture.Report();
+        var pass = report.Passes[0];
+        var stats = pass.Result.FrameStats;
+
+        var markdown = ReportFormatter.Markdown(report);
+        var html = HtmlReport.Html(report);
+        var json = ReportFormatter.Json(report);
+        var console = ConsoleOutput(report);
+
+        var expected = new[]
+        {
+            ReportFormat.Num(pass.Result.FpsAverage),
+            ReportFormat.Num(pass.Result.Fps95),
+            ReportFormat.Num(pass.Result.FpsMinimum),
+            ReportFormat.Num(pass.Result.FpsMaximum),
+            ReportFormat.Num(stats.OnePercentLowFps),
+            ReportFormat.Num(stats.AverageFrameMs),
+            stats.Frames.ToString(),
+        };
+
+        foreach (var value in expected)
+        {
+            Assert.Contains(value, markdown);
+            Assert.Contains(value, html);
+            Assert.Contains(value, console);
+        }
+
+        // JSON хранит числа как есть, без форматирования "0.0", поэтому сверяем значениями
+        using var parsed = System.Text.Json.JsonDocument.Parse(json);
+        var metrics = parsed.RootElement.GetProperty("passes")[0].GetProperty("metrics");
+
+        Assert.Equal(pass.Result.FpsAverage, metrics.GetProperty("fpsAverage").GetDouble(), 3);
+        Assert.Equal(pass.Result.Fps95, metrics.GetProperty("fps95").GetDouble(), 3);
+        Assert.Equal(pass.Result.FpsMinimum, metrics.GetProperty("fpsMinimum").GetDouble(), 3);
+        Assert.Equal(pass.Result.FpsMaximum, metrics.GetProperty("fpsMaximum").GetDouble(), 3);
+        Assert.Equal(stats.Frames, metrics.GetProperty("frames").GetInt32());
+    }
+
+    /// <summary>
+    /// Закоммиченные примеры отчётов должны показывать те же числа, что и свежий вывод.
+    /// Раньше пример устаревал тихо: текст обоснования разошёлся с кодом, и заметить это
+    /// можно было только глазами.
+    /// </summary>
+    [Fact]
+    public void Закоммиченные_Примеры_Отчётов_Согласованы_Между_Собой()
+    {
+        var markdown = File.ReadAllText(RepoFile(Path.Combine("docs", "example-report.md")));
+        var html = File.ReadAllText(RepoFile(Path.Combine("docs", "example-report.html")));
+
+        var fromMarkdown = ResultsRow(markdown, "CPU-тест");
+        var fromHtml = ResultsRow(html, "CPU-тест");
+
+        Assert.Equal(fromMarkdown, fromHtml);
+
+        var gpuMarkdown = ResultsRow(markdown, "GPU-тест");
+        var gpuHtml = ResultsRow(html, "GPU-тест");
+
+        Assert.Equal(gpuMarkdown, gpuHtml);
+    }
+
+    /// <summary>
+    /// Числа строки результатов по названию теста. У markdown и HTML строка устроена по-разному,
+    /// поэтому беру просто все числа подряд - порядок столбцов в обоих форматах одинаковый.
+    /// </summary>
+    /// <summary>Ищет файл от корня репозитория: тесты запускаются из каталога сборки.</summary>
+    private static string RepoFile(string relative)
+    {
+        var directory = new DirectoryInfo(AppContext.BaseDirectory);
+
+        while (directory is not null)
+        {
+            var candidate = Path.Combine(directory.FullName, relative);
+            if (File.Exists(candidate))
+                return candidate;
+
+            directory = directory.Parent;
+        }
+
+        throw new FileNotFoundException($"Не найден файл репозитория: {relative}");
+    }
+
+    private static string ResultsRow(string text, string title)
+    {
+        // Берём первую строку-строку результатов: в markdown и HTML это первое упоминание теста
+        // в таблице, а ниже идут таблицы времени кадра, настроек и загрузки с другими числами.
+        var line = text
+            .Split('\n')
+            .First(l => l.Contains(title, StringComparison.Ordinal)
+                     && System.Text.RegularExpressions.Regex.IsMatch(l, @"\d+\.\d"));
+
+        return string.Join(
+            ",",
+            System.Text.RegularExpressions.Regex.Matches(line, @"\d+\.\d").Select(m => m.Value));
+    }
+
+    private static string ConsoleOutput(RunReport report)
+    {
+        var original = Console.Out;
+        using var buffer = new StringWriter();
+        Console.SetOut(buffer);
+
+        try
+        {
+            ConsoleReport.Write(report);
+        }
+        finally
+        {
+            Console.SetOut(original);
+        }
+
+        return buffer.ToString();
+    }
+}

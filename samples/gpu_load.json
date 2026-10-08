@@ -1,0 +1,13 @@
+{
+  "Samples": 222,
+  "AverageGpuBusyPercent": 94.43693693693693,
+  "PeakGpuBusyPercent": 99,
+  "AverageCpuBusyPercent": 13.063048954376963,
+  "PeakCpuBusyPercent": 56.82403433476395,
+  "LastMinuteGpuBusyPercent": 99,
+  "LastMinuteCpuBusyPercent": 11.991407709030563,
+  "MeasureWindowGpuBusyPercent": 98.83333333333333,
+  "MeasureWindowCpuBusyPercent": 13.841548145084182,
+  "WindowSeconds": 221.1635593,
+  "Available": true
+}

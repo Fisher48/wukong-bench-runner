@@ -122,7 +122,7 @@ public static class ConsoleReport
         Wrap($"Proton: {report.Installation.ProtonVersion}; эмуляция ввода: {report.Installation.InputBackend}", "  - ");
 
         Line();
-        Line("Отчёты сохранены в results/<дата>/: report.md, report.json, *_raw.json");
+        Line("Отчёты сохранены в results/<дата>/: report.md, report.html, report.json, *_raw.json");
     }
 
     public static void WriteResult(BenchmarkResult result, string title, string? attempt = null)

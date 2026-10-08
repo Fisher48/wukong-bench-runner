@@ -16,7 +16,9 @@ public sealed record FrameStats(
     double MaxFps,
     double AverageFrameMs,
     double? MedianCpuFrameMs,
-    double? MedianGpuFrameMs);
+    double? MedianGpuFrameMs,
+    /// <summary>Длительность каждого кадра в миллисекундах, по порядку. Нужна для графика.</summary>
+    IReadOnlyList<double>? FrameTimes = null);
 
 public sealed record AppliedSettings(
     string ScreenResolution,
@@ -163,7 +165,11 @@ public static class ResultParser
             MaxFps: sorted[^1],
             AverageFrameMs: average > 0 ? 1000.0 / average : 0.0,
             MedianCpuFrameMs: cpuFrame,
-            MedianGpuFrameMs: gpuFrame);
+            MedianGpuFrameMs: gpuFrame,
+            FrameTimes: frames
+                .Select(f => f.Fps > 0 ? 1000.0 / f.Fps : 0.0)
+                .Where(ms => ms > 0)
+                .ToList());
     }
 
     private static double? NullableMedian(IEnumerable<double> values)

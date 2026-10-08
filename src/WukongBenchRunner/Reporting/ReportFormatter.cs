@@ -66,7 +66,7 @@ public static class ReportFormatter
         builder.AppendLine("| --- | --- |");
 
         foreach (var (key, value) in system.Rows)
-            builder.AppendLine($"| {key} | {Cell(value)} |");
+            builder.AppendLine($"| {key} | {ReportFormat.Cell(value)} |");
 
         builder.AppendLine();
     }
@@ -82,8 +82,8 @@ public static class ReportFormatter
         {
             var stats = pass.Result.FrameStats;
             builder.AppendLine(
-                $"| {pass.Title} | {Num(pass.Result.FpsAverage)} | {Num(pass.Result.Fps95)} | {Num(stats.OnePercentLowFps)} " +
-                $"| {Num(pass.Result.FpsMinimum)} | {Num(pass.Result.FpsMaximum)} | {stats.Frames} | {Num(stats.AverageFrameMs)} |");
+                $"| {pass.Title} | {ReportFormat.Num(pass.Result.FpsAverage)} | {ReportFormat.Num(pass.Result.Fps95)} | {ReportFormat.Num(stats.OnePercentLowFps)} " +
+                $"| {ReportFormat.Num(pass.Result.FpsMinimum)} | {ReportFormat.Num(pass.Result.FpsMaximum)} | {stats.Frames} | {ReportFormat.Num(stats.AverageFrameMs)} |");
         }
 
         var withRepeats = passes.Where(pass => pass.AllRuns.Count > 1).ToList();
@@ -98,10 +98,10 @@ public static class ReportFormatter
             foreach (var pass in withRepeats)
             {
                 var values = pass.AllRuns.Select(r => r.FpsAverage).OrderBy(v => v).ToList();
-                var listed = string.Join(", ", values.Select(Num));
+                var listed = string.Join(", ", values.Select(ReportFormat.Num));
                 builder.AppendLine(
-                    $"| {pass.Title} | {values.Count} | {listed} | {Num(ResultParser.Median(values))} " +
-                    $"| {Num(values[0])} | {Num(values[^1])} | {Num(values[^1] - values[0])} |");
+                    $"| {pass.Title} | {values.Count} | {listed} | {ReportFormat.Num(ResultParser.Median(values))} " +
+                    $"| {ReportFormat.Num(values[0])} | {ReportFormat.Num(values[^1])} | {ReportFormat.Num(values[^1] - values[0])} |");
             }
         }
 
@@ -118,7 +118,7 @@ public static class ReportFormatter
             {
                 var stats = pass.Result.FrameStats;
                 builder.AppendLine(
-                    $"| {pass.Title} | {Num(stats.MedianCpuFrameMs ?? 0)} | {Num(stats.MedianGpuFrameMs ?? 0)} | {Num(stats.AverageFrameMs)} |");
+                    $"| {pass.Title} | {ReportFormat.Num(stats.MedianCpuFrameMs ?? 0)} | {ReportFormat.Num(stats.MedianGpuFrameMs ?? 0)} | {ReportFormat.Num(stats.AverageFrameMs)} |");
             }
 
             builder.AppendLine();
@@ -137,7 +137,7 @@ public static class ReportFormatter
             var applied = pass.Result.Applied;
             builder.AppendLine(
                 $"| {pass.Title} | {applied.ScreenResolution} | {applied.RenderScalePercent} | {applied.QualityLevel} " +
-                $"| {OnOff(applied.RayTracing)} | {OnOff(applied.Upscaler)} | {OnOff(applied.FrameGeneration)} | {pass.Result.GameVersion} |");
+                $"| {ReportFormat.OnOff(applied.RayTracing)} | {ReportFormat.OnOff(applied.Upscaler)} | {ReportFormat.OnOff(applied.FrameGeneration)} | {pass.Result.GameVersion} |");
         }
 
         builder.AppendLine();
@@ -153,9 +153,9 @@ public static class ReportFormatter
             {
                 var load = pass.Load;
                 builder.AppendLine(
-                    $"| {pass.Title} | {Pct(load?.AverageCpuBusyPercent)} | {Pct(load?.PeakCpuBusyPercent)} " +
-                    $"| {Pct(load?.AverageGpuBusyPercent)} | {Pct(load?.PeakGpuBusyPercent)} " +
-                    $"| {Pct(load?.MeasureWindowCpuBusyPercent)} | {Pct(load?.MeasureWindowGpuBusyPercent)} |");
+                    $"| {pass.Title} | {ReportFormat.Pct(load?.AverageCpuBusyPercent)} | {ReportFormat.Pct(load?.PeakCpuBusyPercent)} " +
+                    $"| {ReportFormat.Pct(load?.AverageGpuBusyPercent)} | {ReportFormat.Pct(load?.PeakGpuBusyPercent)} " +
+                    $"| {ReportFormat.Pct(load?.MeasureWindowCpuBusyPercent)} | {ReportFormat.Pct(load?.MeasureWindowGpuBusyPercent)} |");
             }
 
             builder.AppendLine();
@@ -180,7 +180,7 @@ public static class ReportFormatter
         {
             var result = pass.Result;
             builder.AppendLine(
-                $"| {pass.Title} | {Cell(result.CpuModel)} | {Cell(result.GpuModel)} | {Cell(result.GpuDriverVersion)} " +
+                $"| {pass.Title} | {ReportFormat.Cell(result.CpuModel)} | {ReportFormat.Cell(result.GpuModel)} | {ReportFormat.Cell(result.GpuDriverVersion)} " +
                 $"| {result.SystemMemory} | {result.VideoMemory} |");
         }
 
@@ -195,7 +195,7 @@ public static class ReportFormatter
         builder.AppendLine("| --- | --- |");
 
         foreach (var (parameter, value) in pass.Settings)
-            builder.AppendLine($"| {parameter} | {Cell(value)} |");
+            builder.AppendLine($"| {parameter} | {ReportFormat.Cell(value)} |");
 
         builder.AppendLine();
         builder.AppendLine("Почему именно так:");
@@ -205,7 +205,7 @@ public static class ReportFormatter
             builder.AppendLine($"- {reason}");
 
         builder.AppendLine();
-        builder.AppendLine($"Сырой файл результата: `{pass.RawCopyPath}`");
+        builder.AppendLine($"Сырой файл результата рядом с отчётом: `{Path.GetFileName(pass.RawCopyPath)}`");
         builder.AppendLine();
     }
 
@@ -222,22 +222,19 @@ public static class ReportFormatter
             "чтобы игра не переписала GameUserSettings.ini; исходный конфиг восстанавливается из резервной копии.");
     }
 
-    private static string OnOff(int value) => value == 0 ? "выкл." : "вкл.";
 
-    private static string Cell(string? value) => (value ?? string.Empty).Replace("|", "\\|", StringComparison.Ordinal);
 
-    private static string Pct(double? value) => value is { } v ? $"{v.ToString("0", CultureInfo.InvariantCulture)}%" : "н/д";
 
-    private static string Num(double value) => value.ToString("0.0", CultureInfo.InvariantCulture);
 
     public static void WriteToDirectory(RunReport report, string directory)
     {
         Directory.CreateDirectory(directory);
         File.WriteAllText(Path.Combine(directory, "report.md"), Markdown(report), new UTF8Encoding(false));
         File.WriteAllText(Path.Combine(directory, "report.json"), Json(report), new UTF8Encoding(false));
+        File.WriteAllText(Path.Combine(directory, "report.html"), HtmlReport.Html(report), new UTF8Encoding(false));
     }
 
-    private static string Json(RunReport report)
+    public static string Json(RunReport report)
     {
         var passes = report.Passes.Select(pass => new
         {

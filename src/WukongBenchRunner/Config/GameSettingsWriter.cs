@@ -16,6 +16,13 @@ public sealed record GraphicsSettings
     public required string Upscaler { get; init; }
     public required string AntiAliasingUpscaler { get; init; }
 
+    /// <summary>
+    /// Отдельные группы качества поверх общего значения <see cref="ScalabilityValue"/>.
+    /// Нужны, чтобы в CPU-тесте поднять группы, которые бьют по процессору, не трогая видеокарту.
+    /// </summary>
+    public IReadOnlyDictionary<string, int> ScalabilityOverrides { get; init; } =
+        new Dictionary<string, int>();
+
     public static int RenderHeightFor(int screenHeight, int renderScalePercent)
     {
         ArgumentOutOfRangeException.ThrowIfNegativeOrZero(screenHeight);
@@ -96,6 +103,17 @@ public static class GameSettingsWriter
         var scalability = settings.ScalabilityValue.ToString();
         foreach (var key in ScalabilityKeys)
             document.Set(ScalabilitySection, key, scalability);
+
+        foreach (var (key, value) in settings.ScalabilityOverrides)
+        {
+            if (!ScalabilityKeys.Contains(key))
+                throw new ArgumentOutOfRangeException(
+                    nameof(settings),
+                    key,
+                    $"Неизвестная группа качества: {key}");
+
+            document.Set(ScalabilitySection, key, value.ToString());
+        }
     }
 
     private static string Bool(bool value) => value ? "True" : "False";

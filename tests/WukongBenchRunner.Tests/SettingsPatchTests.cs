@@ -24,6 +24,34 @@ public sealed class SettingsPatchTests
     }
 
     [Fact]
+    public void Переопределение_Группы_Не_Затирает_Остальные()
+    {
+        var document = IniDocument.Parse(FixtureIni());
+        var settings = ProfileCatalog.Cpu(screenHeight: 1200).Settings with
+        {
+            ScalabilityOverrides = new Dictionary<string, int> { ["sg.ViewDistanceQuality"] = 5 },
+        };
+
+        GameSettingsWriter.Apply(document, settings);
+
+        Assert.Equal("5", document.Get(GameSettingsWriter.ScalabilitySection, "sg.ViewDistanceQuality"));
+        Assert.Equal("0", document.Get(GameSettingsWriter.ScalabilitySection, "sg.ShadowQuality"));
+        Assert.Equal("0", document.Get(GameSettingsWriter.ScalabilitySection, "sg.TextureQuality"));
+    }
+
+    [Fact]
+    public void Неизвестная_Группа_Качества_Отклоняется()
+    {
+        var document = IniDocument.Parse(FixtureIni());
+        var settings = ProfileCatalog.Cpu(screenHeight: 1200).Settings with
+        {
+            ScalabilityOverrides = new Dictionary<string, int> { ["sg.NoSuchQuality"] = 5 },
+        };
+
+        Assert.Throws<ArgumentOutOfRangeException>(() => GameSettingsWriter.Apply(document, settings));
+    }
+
+    [Fact]
     public void TupleList_Обновляет_Существующие_И_Добавляет_Новые_Ключи()
     {
         var raw = "((\"A\", \"1\"),(\"B\", \"2\"))";

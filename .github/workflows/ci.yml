@@ -1,0 +1,31 @@
+name: Build and tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Установить .NET 8 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Сборка
+        run: dotnet build -c Release --nologo
+
+      - name: Тесты
+        run: dotnet test -c Release --no-build --nologo
+
+      - name: Отчёт из samples
+        run: >
+          dotnet run -c Release --no-build --project src/WukongBenchRunner --
+          report --from-results samples/cpu_raw.json samples/gpu_raw.json
+          --output ${{ runner.temp }}/sample-report

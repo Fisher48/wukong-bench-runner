@@ -19,6 +19,18 @@ public static class ProfileCatalog
 {
     private const string UpscalerOff = "0";
 
+    /// <summary>
+    /// Дальность прорисовки и плотность растительности грузят процессор, а не видеокарту:
+    /// на кадр становится больше объектов, то есть больше отсечения, сортировки и draw calls
+    /// на стороне CPU. Остальные группы остаются на нуле, чтобы GPU не стать ограничителем.
+    /// </summary>
+    private static readonly IReadOnlyDictionary<string, int> CpuScalabilityOverrides =
+        new Dictionary<string, int>
+        {
+            ["sg.ViewDistanceQuality"] = 5,
+            ["sg.FoliageQuality"] = 5,
+        };
+
     public static BenchmarkProfile Cpu(int renderScalePercent = 50, int screenHeight = DefaultScreenHeight) => new(
         TestKind.Cpu,
         "CPU-тест",
@@ -36,12 +48,15 @@ public static class ProfileCatalog
             RayTracing = false,
             Upscaler = UpscalerOff,
             AntiAliasingUpscaler = "0",
+            ScalabilityOverrides = CpuScalabilityOverrides,
         },
         [
             ("Разрешение окна", $"{RenderWidth(screenHeight)} x {screenHeight} (текущее окно игры, не меняется)"),
             ("Масштаб рендеринга", $"{renderScalePercent}% -> {RenderWidth(screenHeight) * renderScalePercent / 100} x {GraphicsSettings.RenderHeightFor(screenHeight, renderScalePercent)}"),
             ("ImageQuality (высота рендера)", $"{GraphicsSettings.RenderHeightFor(screenHeight, renderScalePercent)} px"),
-            ("Качество (меню / sg.*)", "1 / 0 - минимум"),
+            ("Качество (меню / sg.*)", "1 / 0 - минимум, кроме дальности и растительности (5)"),
+            ("Дальность прорисовки (sg.ViewDistanceQuality)", "5 - максимум, грузит CPU"),
+            ("Растительность (sg.FoliageQuality)", "5 - максимум, грузит CPU"),
             ("Трассировка лучей", "выкл."),
             ("Апскейлер (DLSS/FSR/XeSS)", "выкл."),
             ("Генерация кадров", "выкл."),
@@ -53,6 +68,11 @@ public static class ProfileCatalog
             "Масштаб рендеринга 50% и минимальное качество убирают почти всю работу GPU: " +
             "на кадр остаётся ~1-2 мс, тогда как только CPU на этой сцене занимает десятки миллисекунд. " +
             "Видеокарта перестаёт быть ограничителем, и FPS определяется процессором.",
+            "Дальность прорисовки и плотность растительности подняты до максимума, остальные группы оставлены на нуле. " +
+            "Это единственные настройки, которые делают тяжелее именно процессор: объектов в кадре становится больше, " +
+            "а значит больше отсечения, сортировки и вызовов отрисовки на стороне CPU. Видеокарта при этом рисует " +
+            "по-прежнему мелкую картинку 50% рендера. На прошлой версии профиля, где все группы стояли на нуле, " +
+            "процессор в кадре был занят 19 мс из 66, и остальное время уходило на Proton, а не на CPU.",
             "Разрешение окна не трогаю: бенчмарк при первом запуске сам выбрал его под этот экран, " +
             "а потери GPU и так достаточно за счёт 50% масштаба. Играть в разрешении меньше окна " +
             "дополнительно снижает быстродействие CPU (окно, ввод, презентация кадра), " +

@@ -116,7 +116,8 @@ public static class ConsoleReport
         Line("ПРИМЕЧАНИЯ");
         Wrap("CPUAvg/GPUAvg из JSON под Proton всегда 1% (Performance Counters Windows недоступны из wine), " +
              "поэтому загрузка CPU/GPU не выводится.", "  - ");
-        Wrap("CPUFrameTime/GPUFrameTime под Proton не согласованы с FPS, поэтому используются только FPS* и статистика по Records.", "  - ");
+        Wrap("CPUFrameTime в JSON настоящий, а GPUFrameTime повторяет обратную величину FPS, то есть это длина кадра. " +
+             "Итоговый FPS считается только по полям FPS* и пересчёту Records.", "  - ");
         Wrap($"Каталог результатов: {report.Installation.HistoryDir}", "  - ");
         Wrap($"Proton: {report.Installation.ProtonVersion}; эмуляция ввода: {report.Installation.InputBackend}", "  - ");
 

@@ -15,6 +15,12 @@ public sealed class CommandLineOptions
 
     /// <summary>Сколько раз прогнать каждый профиль: медиана по серии устойчивее одного замера.</summary>
     public int RepeatCount { get; private set; } = 1;
+
+    /// <summary>Режим запуска теста: флаг движка, клики по меню или флаг со страховкой кликами.</summary>
+    public Running.StartMode StartMode { get; private set; } = Running.StartMode.Auto;
+
+    /// <summary>Сколько ждать результата от флага, прежде чем включить клики по меню.</summary>
+    public TimeSpan? FlagGrace { get; private set; }
     public int WindowTimeoutSeconds { get; private set; } = 300;
     public bool GpuRayTracing { get; private set; }
     public double? StartX { get; private set; }
@@ -93,6 +99,23 @@ public sealed class CommandLineOptions
                         throw new ArgumentException($"--timeout требует целое число минут > 0, получено: {timeout}");
 
                     options.TimeoutMinutes = minutes;
+                    break;
+                case "--start-mode":
+                    var mode = Next(args, ref i, arg);
+                    options.StartMode = mode switch
+                    {
+                        "auto" => Running.StartMode.Auto,
+                        "flag" => Running.StartMode.Flag,
+                        "menu" => Running.StartMode.Menu,
+                        _ => throw new ArgumentException($"--start-mode ожидает auto, flag или menu, получено: {mode}"),
+                    };
+                    break;
+                case "--flag-timeout":
+                    var grace = Next(args, ref i, arg);
+                    if (!int.TryParse(grace, out var graceSeconds) || graceSeconds is < 0 or > 600)
+                        throw new ArgumentException($"--flag-timeout требует целое число секунд от 0 до 600, получено: {grace}");
+
+                    options.FlagGrace = TimeSpan.FromSeconds(graceSeconds);
                     break;
                 case "--repeat":
                     var repeat = Next(args, ref i, arg);
@@ -196,6 +219,9 @@ public sealed class CommandLineOptions
               --keep                   не закрывать бенчмарк после probe
               --from-results <cpu.json> <gpu.json>   построить отчёт без запуска бенчмарка
               --repeat <число>          сколько раз прогнать каждый профиль (1..10, по умолчанию 1)
+              --start-mode auto|flag|menu  как запускать тест: движковым флагом, кликами или флагом
+                                    со страховкой кликами (по умолчанию auto)
+              --flag-timeout <сек>     сколько ждать флаг перед включением кликов (0..600, по умолчанию 30)
 
             Во время прогона не трогайте мышь и клавиатуру: окно должно оставаться в фокусе.
             """);

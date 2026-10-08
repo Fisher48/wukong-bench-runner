@@ -429,6 +429,14 @@ public sealed class RobustnessTests : IDisposable
     }
 
     [Fact]
+    public void Тест_Считается_Идущим_По_Приросту_Процессорного_Времени()
+    {
+        Assert.False(BenchmarkRunner.IsRunningBetween(previousSeconds: null, currentSeconds: 12.0));
+        Assert.False(BenchmarkRunner.IsRunningBetween(previousSeconds: 10.0, currentSeconds: 10.1));
+        Assert.True(BenchmarkRunner.IsRunningBetween(previousSeconds: 10.0, currentSeconds: 13.7));
+    }
+
+    [Fact]
     public void Высота_Окна_Берётся_Из_Готового_Результата_Без_Xrandr()
     {
         var result = WukongBenchRunner.Results.ResultParser.ParseFile(Path.Combine("TestData", "result_sample.json"));

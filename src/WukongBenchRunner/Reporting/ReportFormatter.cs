@@ -215,8 +215,9 @@ public static class ReportFormatter
         builder.AppendLine();
         builder.AppendLine("- CPUAvg/GPUAvg из JSON бенчмарка под Proton всегда равны 1%: счётчики Windows " +
             "Performance Counters недоступны из wine, поэтому загрузка CPU/GPU не приводится. Ориентир - FPS и времена кадров.");
-        builder.AppendLine("- CPUFrameTime/GPUFrameTime под Proton также искажены (значения не сходятся с FPS), " +
-            "поэтому в выводе используются только поля FPS* и пересчитанная статистика по массиву Records.");
+        builder.AppendLine("- CPUFrameTime в JSON настоящий, а GPUFrameTime повторяет обратную величину FPS, " +
+            "то есть это длина кадра, а не работа видеокарты. Итоговый FPS считается только по полям FPS* " +
+            "и пересчитанной статистике по массиву Records.");
         builder.AppendLine("- Инструмент после получения результата принудительно закрывает процесс бенчмарка, " +
             "чтобы игра не переписала GameUserSettings.ini; исходный конфиг восстанавливается из резервной копии.");
     }

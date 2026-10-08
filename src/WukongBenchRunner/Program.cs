@@ -285,7 +285,9 @@ public static class Program
                         options.Layout,
                         TimeSpan.FromMinutes(options.TimeoutMinutes),
                         TimeSpan.FromSeconds(options.WindowTimeoutSeconds),
-                        graphics);
+                        graphics,
+                        options.StartMode,
+                        options.FlagGrace);
                     var result = runner.Run(Write, cancellation.Token);
                     runs.Add(result);
 

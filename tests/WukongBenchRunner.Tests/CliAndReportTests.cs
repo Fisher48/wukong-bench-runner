@@ -10,6 +10,33 @@ namespace WukongBenchRunner.Tests;
 public sealed class CliAndReportTests
 {
     [Fact]
+    public void Флаг_Движка_Добавляется_Только_В_Режиме_Не_Меню()
+    {
+        Assert.False(BenchmarkRunner.UsesBenchmarkFlag(StartMode.Menu));
+        Assert.True(BenchmarkRunner.UsesBenchmarkFlag(StartMode.Auto));
+        Assert.True(BenchmarkRunner.UsesBenchmarkFlag(StartMode.Flag));
+
+        Assert.Equal(["-applaunch", "3132990"], BenchmarkRunner.LaunchArguments(withFlag: false));
+        Assert.Equal(["-applaunch", "3132990", "-benchmark"], BenchmarkRunner.LaunchArguments(withFlag: true));
+    }
+
+    [Fact]
+    public void Cli_Разбирает_Режим_Запуска_И_Ожидание_Флага()
+    {
+        Assert.Equal(StartMode.Auto, CommandLineOptions.Parse(["run"]).StartMode);
+        Assert.Equal(StartMode.Flag, CommandLineOptions.Parse(["run", "--start-mode", "flag"]).StartMode);
+        Assert.Equal(StartMode.Menu, CommandLineOptions.Parse(["run", "--start-mode", "menu"]).StartMode);
+
+        Assert.Null(CommandLineOptions.Parse(["run"]).FlagGrace);
+        Assert.Equal(
+            TimeSpan.FromSeconds(45),
+            CommandLineOptions.Parse(["run", "--flag-timeout", "45"]).FlagGrace);
+
+        Assert.Throws<ArgumentException>(() => CommandLineOptions.Parse(["run", "--start-mode", "wat"]));
+        Assert.Throws<ArgumentException>(() => CommandLineOptions.Parse(["run", "--flag-timeout", "-1"]));
+    }
+
+    [Fact]
     public void Cli_Разбирает_Число_Повторов()
     {
         Assert.Equal(1, CommandLineOptions.Parse(["run"]).RepeatCount);
